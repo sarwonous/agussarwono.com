@@ -8,6 +8,8 @@ theme = "hugo-theme-cactus-plus"
 googleAnalytics = "UA-12740249-3"
 hasCJKLanguage = true
 
+publishDir = "docs"
+
 [params]
 	name = "sarwonous"
 	description = "discover new posibilities"
