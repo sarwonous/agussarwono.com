@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://agussarwono.com/article/cast-interface-struct-golang/</loc>
+    <lastmod>2017-10-25T15:45:42+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://agussarwono.com/categories/</loc>
+    <lastmod>2017-10-25T15:45:42+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://agussarwono.com/tags/</loc>
+    <lastmod>2017-10-25T15:45:42+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://agussarwono.com/article/</loc>
+    <lastmod>2017-10-25T15:45:42+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://agussarwono.com/categories/</loc>
+    <lastmod>2017-10-25T15:45:42+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://agussarwono.com/tags/</loc>
+    <lastmod>2017-10-25T15:45:42+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://agussarwono.com/</loc>
+    <lastmod>2017-10-25T15:45:42+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
