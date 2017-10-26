@@ -62,8 +62,8 @@
                     </h1>
                     <h2 class="headline">
                     Oct 25, 2017 15:45
-                    · 0 word
-                    · 0 minutes read
+                    · 162 words
+                    · 1 minute read
                       <span class="tags">
                       
                       
@@ -77,7 +77,77 @@
                 </header>
                 
                 <section id="post-body">
-                    
+                    <p>cast interface in golang can be usefull when you make a modular app using golang</p>
+
+<p>says</p>
+
+
+package main
+
+import(
+	"fmt"
+)
+
+type Bird interface {
+	Fly()
+}
+
+type Parrot struct {
+	Bird
+	Name string
+}
+
+func (p *Parrot) Fly() {
+	fmt.Println("a Parrot name " + p.Name + " flying")
+}
+
+type Dove struct {
+	Bird
+	Name string
+}
+
+func (p *Dove) Fly() {
+	fmt.Println("a Dove name " + p.Name + " flying")
+}
+
+
+func NewBird(birdType string, name string) Bird {
+	var bird Bird
+	switch birdType {
+	case "dove":
+		bird = &Dove{
+			Name: name,
+		}
+	case "parrot":
+		bird = &Parrot{
+			Name: name,
+		}
+	default:
+	}
+
+	return bird;
+}
+
+func main(){
+	dove := NewBird("dove", "Doval")
+	parrot := NewBird("parrot", "Patriot")
+	// to access Name in dove, cast dove to type Dove
+	doveBird, valid := dove.(*Dove)
+	if !valid {
+		panic("invalid type")
+	}
+	fmt.Println(doveBird.Name)
+	doveBird.Fly()
+	// same as dove, you need to cast parrot
+	parrotBird, valid := parrot.(*Parrot)
+	if !valid {
+		panic("invalid type")
+	}
+	fmt.Println(parrotBird.Name)
+	parrotBird.Fly()
+}
+
+
                 </section>
             </article>
 
