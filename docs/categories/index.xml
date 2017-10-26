@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tamdan</title>
+    <title>Categories on agus sarwono - programming for dummies</title>
     <link>http://agussarwono.com/categories/</link>
-    <description>Recent content on tamdan</description>
+    <description>Recent content in Categories on agus sarwono - programming for dummies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Oct 2017 15:45:42 +0700</lastBuildDate>
     
 	<atom:link href="http://agussarwono.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>cast interface struct golang</title>
-      <link>http://agussarwono.com/article/cast-interface-struct-golang/</link>
+      <title>Tips</title>
+      <link>http://agussarwono.com/categories/tips/</link>
       <pubDate>Wed, 25 Oct 2017 15:45:42 +0700</pubDate>
       
-      <guid>http://agussarwono.com/article/cast-interface-struct-golang/</guid>
-      <description>cast interface in golang can be usefull when you make a modular app using golang
-says
-package main import( &#34;fmt&#34; ) type Bird interface { Fly() } type Parrot struct { Bird Name string } func (p *Parrot) Fly() { fmt.Println(&#34;a Parrot name &#34; + p.Name + &#34; flying&#34;) } type Dove struct { Bird Name string } func (p *Dove) Fly() { fmt.Println(&#34;a Dove name &#34; + p.Name + &#34;</description>
+      <guid>http://agussarwono.com/categories/tips/</guid>
+      <description></description>
     </item>
     
   </channel>

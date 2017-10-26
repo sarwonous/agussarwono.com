@@ -177,6 +177,7 @@ nav.main-nav {
     margin: 0 auto;
     text-align: right;
     z-index: 100;
+    max-width: 600px;
 }
 
 nav.main-nav a {

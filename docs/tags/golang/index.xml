@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>agus sarwono - programming for dummies</title>
-    <link>http://agussarwono.com/</link>
-    <description>Recent content on agus sarwono - programming for dummies</description>
+    <title>Golang on agus sarwono - programming for dummies</title>
+    <link>http://agussarwono.com/tags/golang/</link>
+    <description>Recent content in Golang on agus sarwono - programming for dummies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Oct 2017 18:25:50 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 25 Oct 2017 15:45:42 +0700</lastBuildDate>
     
-	<atom:link href="http://agussarwono.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://agussarwono.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About AgusSarwono.com</title>
-      <link>http://agussarwono.com/about/</link>
-      <pubDate>Thu, 26 Oct 2017 18:25:50 +0700</pubDate>
-      
-      <guid>http://agussarwono.com/about/</guid>
-      <description>named agussarwono.com for some reason
-thanks @sarwonous</description>
-    </item>
     
     <item>
       <title>Cast an interface/struct in golang</title>

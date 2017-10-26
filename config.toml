@@ -2,26 +2,35 @@
 baseURL = "http://agussarwono.com/"
 # HTML Language Code Reference, such as en, zh-cn
 languageCode = "en-us"
-title = "tamdan"
+title = "agus sarwono - programming for dummies"
 theme = "hugo-theme-cactus-plus"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = "UA-12740249-3"
 hasCJKLanguage = true
+# enables syntax guessing for code fences without specified language
+pygmentsCodeFencesGuessSyntax = true
+# color-codes for highlighting derived from this style
+pygmentsStyle =               "monokai"
+# true: use pygments-css or false: color-codes directly
+pygmentsUseClasses =          true
+
+enableRobotsTXT = true
+enableEmoji = true
 
 publishDir = "docs"
 
 [params]
 	name = "sarwonous"
 	description = "discover new posibilities"
-	bio = "&quot;World greatest Engineer&quot; said my wife"
+	bio = "&quot;World greatest Engineer&quot; said my <a href=\"http://ayunovanti.com\" target=\"_blank\">wife</a>"
 	# Enter optionally your twitter account
 	twitter = "sarwonous"
 	enableRSS = false
 
 	# Disqus comment
-	disqusShortname = "sarwonous"
+	disqusShortname = "sabdaagus"
 	# Disable disqus comments by set `enableDisqus = "false"`
-	enableDisqus = false
+	enableDisqus = true
 
 	# Duoshuo comment
 	duoshuoShortname = "your_duoshuo_short_name"
@@ -58,7 +67,7 @@ publishDir = "docs"
 	copyright = ""
 	# Sharing options and author information in posts
 	aboutAuthor = "I am so interesting."
-	tweet = ""
+	tweet = "sarwonous"
 	share = ""
 	# 404 page
 	title404 = ""

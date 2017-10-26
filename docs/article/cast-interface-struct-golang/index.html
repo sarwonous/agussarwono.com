@@ -6,8 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="author" content="sarwonous">
 		<meta name="description" content="discover new posibilities">
-		<meta name="generator" content="Hugo 0.20.7" />
-		<title>cast interface struct golang &middot; tamdan</title>
+		<meta name="generator" content="Hugo 0.30.2" />
+		<title>Cast an interface/struct in golang &middot; agus sarwono - programming for dummies</title>
 		<link rel="shortcut icon" href="http://agussarwono.com/favicon/images/favicon.ico">
 		<link rel="apple-touch-icon" sizes="57x57" href="http://agussarwono.com/favicon/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="http://agussarwono.com/favicon/apple-icon-60x60.png">
@@ -29,6 +29,7 @@
 
 		<link rel="stylesheet" href="http://agussarwono.com/css/style.css">
 		<link rel="stylesheet" href="http://agussarwono.com/css/highlight.css">
+		<link rel="stylesheet" href="http://agussarwono.com/css/syntax.css">
 		
 
 		
@@ -44,7 +45,7 @@
 	
 		<a href='http://agussarwono.com/'> <span class="arrow">←</span>Home</a>
 	
-	<a href='http://agussarwono.com/post'>Archive</a>
+	<a href='http://agussarwono.com/article'>Archive</a>
 	<a href='http://agussarwono.com/tags'>Tags</a>
 	<a href='http://agussarwono.com/about'>About</a>
 
@@ -58,17 +59,19 @@
             <article class="post">
                 <header>
                     <h1>
-                        cast interface struct golang
+                        Cast an interface/struct in golang
                     </h1>
                     <h2 class="headline">
                     Oct 25, 2017 15:45
-                    · 162 words
-                    · 1 minute read
+                    · 222 words
+                    · 2 minutes read
                       <span class="tags">
                       
                       
                           
-                              <a href="http://agussarwono.com/tags/"></a>
+                              <a href="http://agussarwono.com/tags/golang">golang</a>
+                          
+                              <a href="http://agussarwono.com/tags/programming">programming</a>
                           
                       
                       
@@ -77,82 +80,106 @@
                 </header>
                 
                 <section id="post-body">
-                    <p>cast interface in golang can be usefull when you make a modular app using golang</p>
+                    <p>type casting interface in golang can be useful when you build a modular app using golang</p>
 
-<p>says</p>
+<p>says
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
 
+<span class="kn">import</span> <span class="p">(</span>
+	<span class="s">&#34;fmt&#34;</span>
+<span class="p">)</span>
 
-package main
+<span class="kd">type</span> <span class="nx">Bird</span> <span class="kd">interface</span> <span class="p">{</span>
+	<span class="nx">Fly</span><span class="p">()</span>
+<span class="p">}</span>
 
-import(
-	"fmt"
-)
+<span class="kd">type</span> <span class="nx">Parrot</span> <span class="kd">struct</span> <span class="p">{</span>
+	<span class="nx">Bird</span>
+	<span class="nx">Name</span> <span class="kt">string</span>
+<span class="p">}</span>
 
-type Bird interface {
-	Fly()
-}
+<span class="kd">func</span> <span class="p">(</span><span class="nx">p</span> <span class="o">*</span><span class="nx">Parrot</span><span class="p">)</span> <span class="nx">Fly</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&#34;a Parrot name &#34;</span> <span class="o">+</span> <span class="nx">p</span><span class="p">.</span><span class="nx">Name</span> <span class="o">+</span> <span class="s">&#34; flying&#34;</span><span class="p">)</span>
+<span class="p">}</span>
 
-type Parrot struct {
-	Bird
-	Name string
-}
+<span class="kd">type</span> <span class="nx">Dove</span> <span class="kd">struct</span> <span class="p">{</span>
+	<span class="nx">Bird</span>
+	<span class="nx">Name</span> <span class="kt">string</span>
+<span class="p">}</span>
 
-func (p *Parrot) Fly() {
-	fmt.Println("a Parrot name " + p.Name + " flying")
-}
+<span class="kd">func</span> <span class="p">(</span><span class="nx">p</span> <span class="o">*</span><span class="nx">Dove</span><span class="p">)</span> <span class="nx">Fly</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&#34;a Dove name &#34;</span> <span class="o">+</span> <span class="nx">p</span><span class="p">.</span><span class="nx">Name</span> <span class="o">+</span> <span class="s">&#34; flying&#34;</span><span class="p">)</span>
+<span class="p">}</span>
 
-type Dove struct {
-	Bird
-	Name string
-}
+<span class="kd">func</span> <span class="nx">NewBird</span><span class="p">(</span><span class="nx">birdType</span> <span class="kt">string</span><span class="p">,</span> <span class="nx">name</span> <span class="kt">string</span><span class="p">)</span> <span class="nx">Bird</span> <span class="p">{</span>
+	<span class="kd">var</span> <span class="nx">bird</span> <span class="nx">Bird</span>
+	<span class="k">switch</span> <span class="nx">birdType</span> <span class="p">{</span>
+	<span class="k">case</span> <span class="s">&#34;dove&#34;</span><span class="p">:</span>
+		<span class="nx">bird</span> <span class="p">=</span> <span class="o">&amp;</span><span class="nx">Dove</span><span class="p">{</span>
+			<span class="nx">Name</span><span class="p">:</span> <span class="nx">name</span><span class="p">,</span>
+		<span class="p">}</span>
+	<span class="k">case</span> <span class="s">&#34;parrot&#34;</span><span class="p">:</span>
+		<span class="nx">bird</span> <span class="p">=</span> <span class="o">&amp;</span><span class="nx">Parrot</span><span class="p">{</span>
+			<span class="nx">Name</span><span class="p">:</span> <span class="nx">name</span><span class="p">,</span>
+		<span class="p">}</span>
+	<span class="k">default</span><span class="p">:</span>
+	<span class="p">}</span>
 
-func (p *Dove) Fly() {
-	fmt.Println("a Dove name " + p.Name + " flying")
-}
+	<span class="k">return</span> <span class="nx">bird</span>
+<span class="p">}</span>
 
+<span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">bird1</span> <span class="o">:=</span> <span class="nx">NewBird</span><span class="p">(</span><span class="s">&#34;dove&#34;</span><span class="p">,</span> <span class="s">&#34;Doval&#34;</span><span class="p">)</span>
+	<span class="nx">bird2</span> <span class="o">:=</span> <span class="nx">NewBird</span><span class="p">(</span><span class="s">&#34;parrot&#34;</span><span class="p">,</span> <span class="s">&#34;Patriot&#34;</span><span class="p">)</span>
+	<span class="c1">// to access Name in bird1, cast dove to type Dove
+</span><span class="c1"></span>	<span class="nx">dove</span><span class="p">,</span> <span class="nx">valid</span> <span class="o">:=</span> <span class="nx">bird1</span><span class="p">.(</span><span class="o">*</span><span class="nx">Dove</span><span class="p">)</span>
+	<span class="k">if</span> <span class="p">!</span><span class="nx">valid</span> <span class="p">{</span>
+		<span class="nb">panic</span><span class="p">(</span><span class="s">&#34;invalid type&#34;</span><span class="p">)</span>
+	<span class="p">}</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">dove</span><span class="p">.</span><span class="nx">Name</span><span class="p">)</span>
+	<span class="nx">dove</span><span class="p">.</span><span class="nx">Fly</span><span class="p">()</span>
+	<span class="c1">// same as dove, you need to cast bird2
+</span><span class="c1"></span>	<span class="nx">parrot</span><span class="p">,</span> <span class="nx">valid</span> <span class="o">:=</span> <span class="nx">bird2</span><span class="p">.(</span><span class="o">*</span><span class="nx">Parrot</span><span class="p">)</span>
+	<span class="k">if</span> <span class="p">!</span><span class="nx">valid</span> <span class="p">{</span>
+		<span class="nb">panic</span><span class="p">(</span><span class="s">&#34;invalid type&#34;</span><span class="p">)</span>
+	<span class="p">}</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">parrot</span><span class="p">.</span><span class="nx">Name</span><span class="p">)</span>
+	<span class="nx">parrot</span><span class="p">.</span><span class="nx">Fly</span><span class="p">()</span>
+<span class="p">}</span></code></pre></div></p>
 
-func NewBird(birdType string, name string) Bird {
-	var bird Bird
-	switch birdType {
-	case "dove":
-		bird = &Dove{
-			Name: name,
-		}
-	case "parrot":
-		bird = &Parrot{
-			Name: name,
-		}
-	default:
-	}
+<p>above example would return</p>
 
-	return bird;
-}
+<pre><code class="language-shell">Doval
+a Dove name Doval flying
+Patriot
+a Parrot name Patriot flying
 
-func main(){
-	dove := NewBird("dove", "Doval")
-	parrot := NewBird("parrot", "Patriot")
-	// to access Name in dove, cast dove to type Dove
-	doveBird, valid := dove.(*Dove)
-	if !valid {
-		panic("invalid type")
-	}
-	fmt.Println(doveBird.Name)
-	doveBird.Fly()
-	// same as dove, you need to cast parrot
-	parrotBird, valid := parrot.(*Parrot)
-	if !valid {
-		panic("invalid type")
-	}
-	fmt.Println(parrotBird.Name)
-	parrotBird.Fly()
-}
+</code></pre>
 
+<p>as you can see, you need to cast <code>dove</code> to <code>Dove</code> type to access <code>Name</code> property, that because <code>NewBird</code> only return interface <code>Bird</code> which doesn&rsquo;t have <code>Name</code> property, you can only define method inside interface, therefore you need to cast them</p>
 
                 </section>
             </article>
 
             
 
+            
+                
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'sabdaagus'; 
+
+     
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+                
             
 
             
@@ -163,15 +190,15 @@ func main(){
 
 	
 	
-    <a class="symbol" href="http://facebook.com/sarwonous">
+    <a class="symbol" href="http://facebook.com/sarwonous" target="_blank">
         <i class="fa fa-facebook-square"></i>
     </a>
     
-    <a class="symbol" href="http://github.com/unicolony">
+    <a class="symbol" href="http://github.com/unicolony" target="_blank">
         <i class="fa fa-github-square"></i>
     </a>
     
-    <a class="symbol" href="http://twitter.com/sarwonous">
+    <a class="symbol" href="http://twitter.com/sarwonous" target="_blank">
         <i class="fa fa-twitter-square"></i>
     </a>
     
