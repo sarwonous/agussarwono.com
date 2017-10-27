@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "http://agussarwono.com/"
+baseURL = "https://agussarwono.com/"
 # HTML Language Code Reference, such as en, zh-cn
 languageCode = "en-us"
 title = "agus sarwono - programming for dummies"

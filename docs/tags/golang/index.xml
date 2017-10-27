@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on agus sarwono - programming for dummies</title>
-    <link>http://agussarwono.com/tags/golang/</link>
+    <link>https://agussarwono.com/tags/golang/</link>
     <description>Recent content in Golang on agus sarwono - programming for dummies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Oct 2017 15:45:42 +0700</lastBuildDate>
     
-	<atom:link href="http://agussarwono.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://agussarwono.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cast an interface/struct in golang</title>
-      <link>http://agussarwono.com/article/cast-interface-struct-golang/</link>
+      <link>https://agussarwono.com/article/cast-interface-struct-golang/</link>
       <pubDate>Wed, 25 Oct 2017 15:45:42 +0700</pubDate>
       
-      <guid>http://agussarwono.com/article/cast-interface-struct-golang/</guid>
+      <guid>https://agussarwono.com/article/cast-interface-struct-golang/</guid>
       <description>type casting interface in golang can be useful when you build a modular app using golang
 says package main import ( &amp;#34;fmt&amp;#34; ) type Bird interface { Fly() } type Parrot struct { Bird Name string } func (p *Parrot) Fly() { fmt.Println(&amp;#34;a Parrot name &amp;#34; + p.Name + &amp;#34; flying&amp;#34;) } type Dove struct { Bird Name string } func (p *Dove) Fly() { fmt.Println(&amp;#34;a Dove name &amp;#34; + p.</description>
     </item>

@@ -3,52 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://agussarwono.com/about/</loc>
+    <loc>https://agussarwono.com/about/</loc>
     <lastmod>2017-10-26T18:25:50+07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://agussarwono.com/article/cast-interface-struct-golang/</loc>
+    <loc>https://agussarwono.com/article/cast-interface-struct-golang/</loc>
     <lastmod>2017-10-25T15:45:42+07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://agussarwono.com/article/</loc>
-    <lastmod>2017-10-25T15:45:42+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://agussarwono.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://agussarwono.com/tags/golang/</loc>
+    <loc>https://agussarwono.com/article/</loc>
     <lastmod>2017-10-25T15:45:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://agussarwono.com/tags/programming/</loc>
+    <loc>https://agussarwono.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://agussarwono.com/tags/golang/</loc>
     <lastmod>2017-10-25T15:45:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://agussarwono.com/tags/</loc>
+    <loc>https://agussarwono.com/tags/programming/</loc>
     <lastmod>2017-10-25T15:45:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://agussarwono.com/categories/tips/</loc>
+    <loc>https://agussarwono.com/tags/</loc>
     <lastmod>2017-10-25T15:45:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://agussarwono.com/</loc>
+    <loc>https://agussarwono.com/categories/tips/</loc>
+    <lastmod>2017-10-25T15:45:42+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://agussarwono.com/</loc>
     <lastmod>2017-10-26T18:25:50+07:00</lastmod>
     <priority>0</priority>
   </url>
