@@ -367,6 +367,7 @@ em, i {
     color: #aaa;
     max-width: 400px;
     margin-top: 2px;
+    font-style: italic;
 }
 
 h3, h4, h5 {
