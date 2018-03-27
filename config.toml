@@ -19,6 +19,8 @@ enableEmoji = true
 
 publishDir = "docs"
 
+staticDir = ["static", "read"]
+
 [params]
 	name = "sarwonous"
 	description = "discover new posibilities"
