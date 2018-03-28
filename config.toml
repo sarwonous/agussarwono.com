@@ -1,4 +1,5 @@
 # Site settings
+staticDir = ["static", "read"]
 baseURL = "https://agussarwono.com/"
 # HTML Language Code Reference, such as en, zh-cn
 languageCode = "en-us"
@@ -19,7 +20,6 @@ enableEmoji = true
 
 publishDir = "docs"
 
-staticDir = ["static", "read"]
 
 [params]
 	name = "sarwonous"
