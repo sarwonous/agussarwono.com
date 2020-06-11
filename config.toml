@@ -22,6 +22,7 @@ publishDir = "docs"
 
 
 [params]
+	yandexKey = "3eedd24f89dc0e33"
 	name = "sarwonous"
 	description = "discover new posibilities"
 	bio = "&quot;World greatest Engineer&quot; said my <a href=\"http://ayunovanti.com\" target=\"_blank\">wife</a>"

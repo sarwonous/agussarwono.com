@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -8,49 +8,43 @@
   </url>
   
   <url>
-    <loc>https://agussarwono.com/article/cast-interface-struct-golang/</loc>
+    <loc>https://agussarwono.com/</loc>
     <lastmod>2017-10-25T15:45:42+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://agussarwono.com/article/</loc>
     <lastmod>2017-10-25T15:45:42+07:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://agussarwono.com/article/cast-interface-struct-golang/</loc>
+    <lastmod>2017-10-25T15:45:42+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://agussarwono.com/categories/</loc>
-    <priority>0</priority>
+    <lastmod>2017-10-25T15:45:42+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://agussarwono.com/tags/golang/</loc>
     <lastmod>2017-10-25T15:45:42+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://agussarwono.com/tags/programming/</loc>
     <lastmod>2017-10-25T15:45:42+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://agussarwono.com/tags/</loc>
     <lastmod>2017-10-25T15:45:42+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://agussarwono.com/categories/tips/</loc>
     <lastmod>2017-10-25T15:45:42+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://agussarwono.com/</loc>
-    <lastmod>2017-10-26T18:25:50+07:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>
