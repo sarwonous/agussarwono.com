@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on agus sarwono - programming for dummies</title>
+    <link>https://agussarwono.com/tags/git/</link>
+    <description>Recent content in git on agus sarwono - programming for dummies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Mar 2021 09:37:36 +0000</lastBuildDate><atom:link href="https://agussarwono.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prepend your commit with JIRA ticket number</title>
+      <link>https://agussarwono.com/article/add-ticket-to-your-commit/</link>
+      <pubDate>Thu, 18 Mar 2021 09:37:36 +0000</pubDate>
+      
+      <guid>https://agussarwono.com/article/add-ticket-to-your-commit/</guid>
+      <description>Introduction Tired putting your ticket number on your commit? Use this git hook to automatically prepend your commit with a Jira ticket based on your branch name
+we will use git hooks to achieve this, using the prepare-commit-msg hook, this will read your branch name, scan if there is a jira ticket pattern, and prepend your commit message with it
+Step 1 Create a new prepare-commit-msg file or rename prepare-commit-msg.sample on folder &amp;lt;your-repo&amp;gt;/.</description>
+    </item>
+    
+  </channel>
+</rss>

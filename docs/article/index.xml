@@ -6,10 +6,17 @@
     <description>Recent content in Articles on agus sarwono - programming for dummies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Oct 2017 15:45:42 +0700</lastBuildDate>
-    
-	<atom:link href="https://agussarwono.com/article/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Thu, 18 Mar 2021 09:37:36 +0000</lastBuildDate><atom:link href="https://agussarwono.com/article/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prepend your commit with JIRA ticket number</title>
+      <link>https://agussarwono.com/article/add-ticket-to-your-commit/</link>
+      <pubDate>Thu, 18 Mar 2021 09:37:36 +0000</pubDate>
+      
+      <guid>https://agussarwono.com/article/add-ticket-to-your-commit/</guid>
+      <description>Introduction Tired putting your ticket number on your commit? Use this git hook to automatically prepend your commit with a Jira ticket based on your branch name
+we will use git hooks to achieve this, using the prepare-commit-msg hook, this will read your branch name, scan if there is a jira ticket pattern, and prepend your commit message with it
+Step 1 Create a new prepare-commit-msg file or rename prepare-commit-msg.sample on folder &amp;lt;your-repo&amp;gt;/.</description>
+    </item>
     
     <item>
       <title>Cast an interface/struct in golang</title>
@@ -19,6 +26,15 @@
       <guid>https://agussarwono.com/article/cast-interface-struct-golang/</guid>
       <description>type casting interface in golang can be useful when you build a modular app using golang
 says package main import ( &amp;#34;fmt&amp;#34; ) type Bird interface { Fly() } type Parrot struct { Bird Name string } func (p *Parrot) Fly() { fmt.Println(&amp;#34;a Parrot name &amp;#34; + p.Name + &amp;#34; flying&amp;#34;) } type Dove struct { Bird Name string } func (p *Dove) Fly() { fmt.Println(&amp;#34;a Dove name &amp;#34; + p.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://agussarwono.com/article/build-your-own-minesweeper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://agussarwono.com/article/build-your-own-minesweeper/</guid>
+      <description></description>
     </item>
     
   </channel>

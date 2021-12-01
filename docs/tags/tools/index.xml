@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tools on agus sarwono - programming for dummies</title>
+    <link>https://agussarwono.com/tags/tools/</link>
+    <description>Recent content in tools on agus sarwono - programming for dummies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Mar 2021 09:37:36 +0000</lastBuildDate><atom:link href="https://agussarwono.com/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automatic SSL on Localhost development environment</title>
+      <link>https://agussarwono.com/article/localhost-development-automatic-ssl/</link>
+      <pubDate>Thu, 18 Mar 2021 09:37:36 +0000</pubDate>
+      
+      <guid>https://agussarwono.com/article/localhost-development-automatic-ssl/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

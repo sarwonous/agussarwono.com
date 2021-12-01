@@ -6,10 +6,51 @@
     <description>Recent content in Tags on agus sarwono - programming for dummies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Oct 2017 15:45:42 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 18 Mar 2021 09:37:36 +0000</lastBuildDate><atom:link href="https://agussarwono.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>branch</title>
+      <link>https://agussarwono.com/tags/branch/</link>
+      <pubDate>Thu, 18 Mar 2021 09:37:36 +0000</pubDate>
+      
+      <guid>https://agussarwono.com/tags/branch/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://agussarwono.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>commit</title>
+      <link>https://agussarwono.com/tags/commit/</link>
+      <pubDate>Thu, 18 Mar 2021 09:37:36 +0000</pubDate>
+      
+      <guid>https://agussarwono.com/tags/commit/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>git</title>
+      <link>https://agussarwono.com/tags/git/</link>
+      <pubDate>Thu, 18 Mar 2021 09:37:36 +0000</pubDate>
+      
+      <guid>https://agussarwono.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>issue</title>
+      <link>https://agussarwono.com/tags/issue/</link>
+      <pubDate>Thu, 18 Mar 2021 09:37:36 +0000</pubDate>
+      
+      <guid>https://agussarwono.com/tags/issue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jira</title>
+      <link>https://agussarwono.com/tags/jira/</link>
+      <pubDate>Thu, 18 Mar 2021 09:37:36 +0000</pubDate>
+      
+      <guid>https://agussarwono.com/tags/jira/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>golang</title>
