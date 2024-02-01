@@ -83,6 +83,7 @@ publishDir = "docs"
 	socialIconStyle = ""
 
 	disableHLJS = false
+	color = "light"
 
 
 # Add additional social link entries underneath
