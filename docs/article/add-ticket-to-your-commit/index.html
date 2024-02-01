@@ -48,6 +48,9 @@
 
   
   <meta name="theme-color" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chela+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
   
   
@@ -88,11 +91,13 @@ Step 1 Create a new prepare-commit-msg file or rename prepare-commit-msg.sample 
 
   
   
-  <script
-    defer
-    src="https://agussarwono.com/highlight.min.js"
-    onload="hljs.initHighlightingOnLoad();"
-  ></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+  <script>hljs.highlightAll();</script>
   
 
   
@@ -126,7 +131,7 @@ if (!doNotTrack) {
   <meta itemprop="name" content="Prepend your commit with JIRA ticket number">
 <meta itemprop="description" content="automaticaly prepend your commit with JIRA ticket or a branch name"><meta itemprop="datePublished" content="2021-03-18T09:37:36+00:00" />
 <meta itemprop="dateModified" content="2021-03-18T09:37:36+00:00" />
-<meta itemprop="wordCount" content="145">
+<meta itemprop="wordCount" content="143">
 <meta itemprop="keywords" content="git,commit,jira,issue,branch," />
   
   <meta property="og:title" content="Prepend your commit with JIRA ticket number" />
@@ -281,11 +286,11 @@ Use this git hook to automatically prepend your commit with a Jira ticket based 
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nv">TICKET</span><span class="o">=[</span><span class="k">$(</span>git rev-parse --abbrev-ref HEAD <span class="p">|</span> grep -Eo <span class="s1">&#39;^(\w+/)?(\w+[-_])?[0-9]+&#39;</span> <span class="p">|</span> grep -Eo <span class="s1">&#39;(\w+[-])?[0-9]+&#39;</span> <span class="p">|</span> tr <span class="s2">&#34;[:lower:]&#34;</span> <span class="s2">&#34;[:upper:]&#34;</span><span class="k">)</span><span class="o">]</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[[</span> <span class="nv">$TICKET</span> <span class="o">==</span> <span class="s2">&#34;[]&#34;</span> <span class="o">||</span> <span class="s2">&#34;</span><span class="nv">$MESSAGE</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;</span><span class="nv">$TICKET</span><span class="s2">&#34;</span>* <span class="o">]]</span><span class="p">;</span><span class="k">then</span>
-</span></span><span class="line"><span class="cl">  <span class="nb">exit</span> 0<span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[[</span><span class="nv">$TICKET</span> <span class="o">==</span> <span class="s2">&#34;[]&#34;</span> <span class="o">||</span> <span class="s2">&#34;</span><span class="nv">$MESSAGE</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;</span><span class="nv">$TICKET</span><span class="s2">&#34;</span>*<span class="o">]]</span><span class="p">;</span><span class="k">then</span>
+</span></span><span class="line"><span class="cl"><span class="nb">exit</span> 0<span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="k">fi</span>
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$TICKET</span><span class="s2"> </span><span class="nv">$MESSAGE</span><span class="s2">&#34;</span> &gt; <span class="nv">$FILE</span></span></span></code></pre></div>
-<h4 id="step-3">Step 3</h4>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$TICKET</span><span class="s2"> </span><span class="nv">$MESSAGE</span><span class="s2">&#34;</span> &gt; <span class="nv">$FILE</span>
+</span></span></code></pre></div><h4 id="step-3">Step 3</h4>
 <p>Open your terminal and type the following command
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod +x &lt;yourrepo&gt;/.git/hooks/prepare-commit-msg</span></span></code></pre></div></p>
 <h4 id="step-4">Step 4</h4>

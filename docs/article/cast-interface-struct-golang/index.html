@@ -48,6 +48,9 @@
 
   
   <meta name="theme-color" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chela+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
   
   
@@ -87,11 +90,13 @@ says package main import ( &#34;fmt&#34; ) type Bird interface { Fly() } type Pa
 
   
   
-  <script
-    defer
-    src="https://agussarwono.com/highlight.min.js"
-    onload="hljs.initHighlightingOnLoad();"
-  ></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+  <script>hljs.highlightAll();</script>
   
 
   
@@ -125,7 +130,7 @@ if (!doNotTrack) {
   <meta itemprop="name" content="Cast an interface/struct in golang">
 <meta itemprop="description" content="cast interface in golang can be usefull when you make a modular app using golang..."><meta itemprop="datePublished" content="2017-10-25T15:45:42+07:00" />
 <meta itemprop="dateModified" content="2017-10-25T15:45:42+07:00" />
-<meta itemprop="wordCount" content="222">
+<meta itemprop="wordCount" content="223">
 <meta itemprop="keywords" content="golang,programming," />
   
   <meta property="og:title" content="Cast an interface/struct in golang" />
@@ -329,7 +334,8 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">	<span class="nx">parrot</span><span class="p">.</span><span class="nf">Fly</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></p>
 <p>above example would return</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Doval
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">machine@root$
+</span></span><span class="line"><span class="cl">Doval
 </span></span><span class="line"><span class="cl">a Dove name Doval flying
 </span></span><span class="line"><span class="cl">Patriot
 </span></span><span class="line"><span class="cl">a Parrot name Patriot flying
