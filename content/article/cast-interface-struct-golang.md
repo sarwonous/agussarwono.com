@@ -81,6 +81,7 @@ func main() {
 above example would return 
 
 ```shell
+machine@root$
 Doval
 a Dove name Doval flying
 Patriot

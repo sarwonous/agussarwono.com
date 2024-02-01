@@ -4,7 +4,8 @@ baseURL = "https://agussarwono.com/"
 # HTML Language Code Reference, such as en, zh-cn
 languageCode = "en-us"
 title = "agus sarwono - programming for dummies"
-theme = "hugo-theme-cactus-plus"
+# theme = "hugo-theme-cactus-plus"
+theme = "paper"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = "UA-12740249-3"
 hasCJKLanguage = true
@@ -81,9 +82,11 @@ publishDir = "docs"
 	# The social icons can be styled differently if you use mono as font - circle, rounded, or empty
 	socialIconStyle = ""
 
+	disableHLJS = false
+
 
 # Add additional social link entries underneath
 [social]
 	facebook-square = "http://facebook.com/sarwonous"
 	twitter-square = "http://twitter.com/sarwonous"
-	github-square = "http://github.com/unicolony"
+	github-square = "http://github.com/sarwonous"

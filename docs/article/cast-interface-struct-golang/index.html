@@ -1,209 +1,113 @@
-<!DOCTYPE html>
-<html lang="en-us">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		
-		<meta name="description" content="discover new posibilities">
-		<meta name="generator" content="Hugo 0.83.1" />
-		<title>Cast an interface/struct in golang &middot; agus sarwono - programming for dummies</title>
-		<link rel="shortcut icon" href="https://agussarwono.com/images/favicon.ico">
-		<link rel="stylesheet" href="https://agussarwono.com/css/style.css">
-		<link rel="stylesheet" href="https://agussarwono.com/css/highlight.css">
-
-		
-		<link rel="stylesheet" href="https://agussarwono.com/css/font-awesome.min.css">
-		
-
-		
-
-		
-		 <meta name="yandex-verification" content="3eedd24f89dc0e33" />
-	</head>
-
-    <body>
-       <nav class="main-nav">
-	
-	
-		<a href='https://agussarwono.com/'> <span class="arrow">←</span>Home</a>
-	
-	<a href='https://agussarwono.com/posts'>Archive</a>
-	<a href='https://agussarwono.com/tags'>Tags</a>
-	<a href='https://agussarwono.com/about'>About</a>
-
-	
-
-	
-</nav>
-
-
-        <section id="wrapper" class="post">
-            <article>
-                <header>
-                    <h1>
-                        Cast an interface/struct in golang
-                    </h1>
-                    <h2 class="headline">
-                    Oct 25, 2017 15:45
-                    · 222 words
-                    · 2 minute read
-                      <span class="tags">
-                      
-                      
-                          
-                              <a href="https://agussarwono.com/tags/golang">golang</a>
-                          
-                              <a href="https://agussarwono.com/tags/programming">programming</a>
-                          
-                      
-                      
-                      </span>
-                    </h2>
-                </header>
-                
-                <section id="post-body">
-                    <p>type casting interface in golang can be useful when you build a modular app using golang</p>
-<p>says
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
-
-<span class="kn">import</span> <span class="p">(</span>
-	<span class="s">&#34;fmt&#34;</span>
-<span class="p">)</span>
-
-<span class="kd">type</span> <span class="nx">Bird</span> <span class="kd">interface</span> <span class="p">{</span>
-	<span class="nf">Fly</span><span class="p">()</span>
-<span class="p">}</span>
-
-<span class="kd">type</span> <span class="nx">Parrot</span> <span class="kd">struct</span> <span class="p">{</span>
-	<span class="nx">Bird</span>
-	<span class="nx">Name</span> <span class="kt">string</span>
-<span class="p">}</span>
-
-<span class="kd">func</span> <span class="p">(</span><span class="nx">p</span> <span class="o">*</span><span class="nx">Parrot</span><span class="p">)</span> <span class="nf">Fly</span><span class="p">()</span> <span class="p">{</span>
-	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;a Parrot name &#34;</span> <span class="o">+</span> <span class="nx">p</span><span class="p">.</span><span class="nx">Name</span> <span class="o">+</span> <span class="s">&#34; flying&#34;</span><span class="p">)</span>
-<span class="p">}</span>
-
-<span class="kd">type</span> <span class="nx">Dove</span> <span class="kd">struct</span> <span class="p">{</span>
-	<span class="nx">Bird</span>
-	<span class="nx">Name</span> <span class="kt">string</span>
-<span class="p">}</span>
-
-<span class="kd">func</span> <span class="p">(</span><span class="nx">p</span> <span class="o">*</span><span class="nx">Dove</span><span class="p">)</span> <span class="nf">Fly</span><span class="p">()</span> <span class="p">{</span>
-	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;a Dove name &#34;</span> <span class="o">+</span> <span class="nx">p</span><span class="p">.</span><span class="nx">Name</span> <span class="o">+</span> <span class="s">&#34; flying&#34;</span><span class="p">)</span>
-<span class="p">}</span>
-
-<span class="kd">func</span> <span class="nf">NewBird</span><span class="p">(</span><span class="nx">birdType</span> <span class="kt">string</span><span class="p">,</span> <span class="nx">name</span> <span class="kt">string</span><span class="p">)</span> <span class="nx">Bird</span> <span class="p">{</span>
-	<span class="kd">var</span> <span class="nx">bird</span> <span class="nx">Bird</span>
-	<span class="k">switch</span> <span class="nx">birdType</span> <span class="p">{</span>
-	<span class="k">case</span> <span class="s">&#34;dove&#34;</span><span class="p">:</span>
-		<span class="nx">bird</span> <span class="p">=</span> <span class="o">&amp;</span><span class="nx">Dove</span><span class="p">{</span>
-			<span class="nx">Name</span><span class="p">:</span> <span class="nx">name</span><span class="p">,</span>
-		<span class="p">}</span>
-	<span class="k">case</span> <span class="s">&#34;parrot&#34;</span><span class="p">:</span>
-		<span class="nx">bird</span> <span class="p">=</span> <span class="o">&amp;</span><span class="nx">Parrot</span><span class="p">{</span>
-			<span class="nx">Name</span><span class="p">:</span> <span class="nx">name</span><span class="p">,</span>
-		<span class="p">}</span>
-	<span class="k">default</span><span class="p">:</span>
-	<span class="p">}</span>
-
-	<span class="k">return</span> <span class="nx">bird</span>
-<span class="p">}</span>
-
-<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-	<span class="nx">bird1</span> <span class="o">:=</span> <span class="nf">NewBird</span><span class="p">(</span><span class="s">&#34;dove&#34;</span><span class="p">,</span> <span class="s">&#34;Doval&#34;</span><span class="p">)</span>
-	<span class="nx">bird2</span> <span class="o">:=</span> <span class="nf">NewBird</span><span class="p">(</span><span class="s">&#34;parrot&#34;</span><span class="p">,</span> <span class="s">&#34;Patriot&#34;</span><span class="p">)</span>
-	<span class="c1">// to access Name in bird1, cast dove to type Dove
-</span><span class="c1"></span>	<span class="nx">dove</span><span class="p">,</span> <span class="nx">valid</span> <span class="o">:=</span> <span class="nx">bird1</span><span class="p">.(</span><span class="o">*</span><span class="nx">Dove</span><span class="p">)</span>
-	<span class="k">if</span> <span class="p">!</span><span class="nx">valid</span> <span class="p">{</span>
-		<span class="nb">panic</span><span class="p">(</span><span class="s">&#34;invalid type&#34;</span><span class="p">)</span>
-	<span class="p">}</span>
-	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">dove</span><span class="p">.</span><span class="nx">Name</span><span class="p">)</span>
-	<span class="nx">dove</span><span class="p">.</span><span class="nf">Fly</span><span class="p">()</span>
-	<span class="c1">// same as dove, you need to cast bird2
-</span><span class="c1"></span>	<span class="nx">parrot</span><span class="p">,</span> <span class="nx">valid</span> <span class="o">:=</span> <span class="nx">bird2</span><span class="p">.(</span><span class="o">*</span><span class="nx">Parrot</span><span class="p">)</span>
-	<span class="k">if</span> <span class="p">!</span><span class="nx">valid</span> <span class="p">{</span>
-		<span class="nb">panic</span><span class="p">(</span><span class="s">&#34;invalid type&#34;</span><span class="p">)</span>
-	<span class="p">}</span>
-	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">parrot</span><span class="p">.</span><span class="nx">Name</span><span class="p">)</span>
-	<span class="nx">parrot</span><span class="p">.</span><span class="nf">Fly</span><span class="p">()</span>
-<span class="p">}</span></code></pre></div></p>
-<p>above example would return</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">Doval
-a Dove name Doval flying
-Patriot
-a Parrot name Patriot flying
-
-</code></pre></div><p>as you can see, you need to cast <code>dove</code> to <code>Dove</code> type to access <code>Name</code> property, that because <code>NewBird</code> only return interface <code>Bird</code> which doesn&rsquo;t have <code>Name</code> property, you can only define method inside interface, therefore you need to cast them</p>
-
-                </section>
-            </article>
-
-            
-
-            
-                <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'sabdaagus'; 
-
-     
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-
-            
-
-            
-
-            <footer id="footer">
-    
-        <div id="social">
-
-	
-	
-    <a class="symbol" href="http://facebook.com/sarwonous">
-        <i class="fa fa-facebook-square"></i>
-    </a>
-    
-    <a class="symbol" href="http://github.com/unicolony">
-        <i class="fa fa-github-square"></i>
-    </a>
-    
-    <a class="symbol" href="http://twitter.com/sarwonous">
-        <i class="fa fa-twitter-square"></i>
-    </a>
-    
-
-
-</div>
-
-    
-    <p class="small">
-    
-       © Copyright 2021 <i class="fa fa-heart" aria-hidden="true"></i> 
-    
-    </p>
-    <p class="small">
-        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
-    </p>
-</footer>
-
-        </section>
-
-        <script src="https://agussarwono.com/js/jquery-3.3.1.min.js"></script>
-<script src="https://agussarwono.com/js/main.js"></script>
-<script src="https://agussarwono.com/js/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<!doctype html>
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Cast an interface/struct in golang - agus sarwono - programming for dummies</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="type casting interface in golang can be useful when you build a modular app using golang
+says package main import ( &#34;fmt&#34; ) type Bird interface { Fly() } type Parrot struct { Bird Name string } func (p *Parrot) Fly() { fmt.Println(&#34;a Parrot name &#34; &#43; p.Name &#43; &#34; flying&#34;) } type Dove struct { Bird Name string } func (p *Dove) Fly() { fmt.Println(&#34;a Dove name &#34; &#43; p." />
+  <meta name="author" content="sarwonous" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="https://agussarwono.com/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://agussarwono.com/theme.png" />
+
+  
+  
+  
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="https://agussarwono.com/twitter.svg" />
+  
+  
+
+  
+  
+  <script
+    defer
+    src="https://agussarwono.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+
+  
+  <link rel="icon" href="https://agussarwono.com/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://agussarwono.com/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.100.2" />
+
+  
+  
+  
   
 <script type="application/javascript">
 var doNotTrack = false;
@@ -217,9 +121,290 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
+  
+  <meta itemprop="name" content="Cast an interface/struct in golang">
+<meta itemprop="description" content="cast interface in golang can be usefull when you make a modular app using golang..."><meta itemprop="datePublished" content="2017-10-25T15:45:42+07:00" />
+<meta itemprop="dateModified" content="2017-10-25T15:45:42+07:00" />
+<meta itemprop="wordCount" content="222">
+<meta itemprop="keywords" content="golang,programming," />
+  
+  <meta property="og:title" content="Cast an interface/struct in golang" />
+<meta property="og:description" content="cast interface in golang can be usefull when you make a modular app using golang..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://agussarwono.com/article/cast-interface-struct-golang/" /><meta property="article:section" content="article" />
+<meta property="article:published_time" content="2017-10-25T15:45:42+07:00" />
+<meta property="article:modified_time" content="2017-10-25T15:45:42+07:00" />
 
 
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Cast an interface/struct in golang"/>
+<meta name="twitter:description" content="cast interface in golang can be usefull when you make a modular app using golang..."/>
+
+  
+  
+  
+  <link rel="canonical" href="https://agussarwono.com/article/cast-interface-struct-golang/" />
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="https://agussarwono.com/"
+      >agus sarwono - programming for dummies</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+    >
+      
+      <a
+        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/sarwonous"
+        target="_blank"
+        rel="me"
+      >
+        twitter
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
 
 
-    </body>
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">Cast an interface/struct in golang</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Oct 25, 2017</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p>type casting interface in golang can be useful when you build a modular app using golang</p>
+<p>says
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">main</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">	<span class="s">&#34;fmt&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Bird</span> <span class="kd">interface</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">Fly</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Parrot</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">Bird</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">Name</span> <span class="kt">string</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">p</span> <span class="o">*</span><span class="nx">Parrot</span><span class="p">)</span> <span class="nf">Fly</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;a Parrot name &#34;</span> <span class="o">+</span> <span class="nx">p</span><span class="p">.</span><span class="nx">Name</span> <span class="o">+</span> <span class="s">&#34; flying&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Dove</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">Bird</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">Name</span> <span class="kt">string</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="p">(</span><span class="nx">p</span> <span class="o">*</span><span class="nx">Dove</span><span class="p">)</span> <span class="nf">Fly</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;a Dove name &#34;</span> <span class="o">+</span> <span class="nx">p</span><span class="p">.</span><span class="nx">Name</span> <span class="o">+</span> <span class="s">&#34; flying&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">NewBird</span><span class="p">(</span><span class="nx">birdType</span> <span class="kt">string</span><span class="p">,</span> <span class="nx">name</span> <span class="kt">string</span><span class="p">)</span> <span class="nx">Bird</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kd">var</span> <span class="nx">bird</span> <span class="nx">Bird</span>
+</span></span><span class="line"><span class="cl">	<span class="k">switch</span> <span class="nx">birdType</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">case</span> <span class="s">&#34;dove&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">bird</span> <span class="p">=</span> <span class="o">&amp;</span><span class="nx">Dove</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="nx">Name</span><span class="p">:</span> <span class="nx">name</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">case</span> <span class="s">&#34;parrot&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">bird</span> <span class="p">=</span> <span class="o">&amp;</span><span class="nx">Parrot</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="nx">Name</span><span class="p">:</span> <span class="nx">name</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">default</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="nx">bird</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">bird1</span> <span class="o">:=</span> <span class="nf">NewBird</span><span class="p">(</span><span class="s">&#34;dove&#34;</span><span class="p">,</span> <span class="s">&#34;Doval&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">bird2</span> <span class="o">:=</span> <span class="nf">NewBird</span><span class="p">(</span><span class="s">&#34;parrot&#34;</span><span class="p">,</span> <span class="s">&#34;Patriot&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// to access Name in bird1, cast dove to type Dove
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">dove</span><span class="p">,</span> <span class="nx">valid</span> <span class="o">:=</span> <span class="nx">bird1</span><span class="p">.(</span><span class="o">*</span><span class="nx">Dove</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="p">!</span><span class="nx">valid</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="nb">panic</span><span class="p">(</span><span class="s">&#34;invalid type&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">dove</span><span class="p">.</span><span class="nx">Name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">dove</span><span class="p">.</span><span class="nf">Fly</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// same as dove, you need to cast bird2
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">parrot</span><span class="p">,</span> <span class="nx">valid</span> <span class="o">:=</span> <span class="nx">bird2</span><span class="p">.(</span><span class="o">*</span><span class="nx">Parrot</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="p">!</span><span class="nx">valid</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="nb">panic</span><span class="p">(</span><span class="s">&#34;invalid type&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">parrot</span><span class="p">.</span><span class="nx">Name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">parrot</span><span class="p">.</span><span class="nf">Fly</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></p>
+<p>above example would return</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Doval
+</span></span><span class="line"><span class="cl">a Dove name Doval flying
+</span></span><span class="line"><span class="cl">Patriot
+</span></span><span class="line"><span class="cl">a Parrot name Patriot flying
+</span></span></code></pre></div><p>as you can see, you need to cast <code>dove</code> to <code>Dove</code> type to access <code>Name</code> property, that because <code>NewBird</code> only return interface <code>Bird</code> which doesn&rsquo;t have <code>Name</code> property, you can only define method inside interface, therefore you need to cast them</p>
+</section>
+
+  
+  
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://agussarwono.com/tags/golang"
+      >golang</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="https://agussarwono.com/tags/programming"
+      >programming</a
+    >
+    
+  </footer>
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    <a
+      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="https://agussarwono.com/article/add-ticket-to-your-commit/"
+      ><span class="mr-1.5">←</span><span>Prepend your commit with JIRA ticket number</span></a
+    >
+    
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2024
+    <a class="link" href="https://agussarwono.com/">agus sarwono - programming for dummies</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
 </html>
