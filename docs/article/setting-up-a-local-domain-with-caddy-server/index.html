@@ -44,7 +44,7 @@
   />
 
   
-  <title>Prepend your commit with JIRA ticket number - agus sarwono - programming for dummies</title>
+  <title>Simplified Guide: Setting Up a Local Domain with Caddy Server - agus sarwono - programming for dummies</title>
 
   
   <meta name="theme-color" />
@@ -53,9 +53,9 @@
   
   
   
-  <meta name="description" content="Introduction Tired putting your ticket number on your commit? Use this git hook to automatically prepend your commit with a Jira ticket based on your branch name
-we will use git hooks to achieve this, using the prepare-commit-msg hook, this will read your branch name, scan if there is a jira ticket pattern, and prepend your commit message with it
-Step 1 Create a new prepare-commit-msg file or rename prepare-commit-msg.sample on folder &lt;your-repo&gt;/." />
+  <meta name="description" content="Introduction In the realm of web development and local testing environments, creating custom local domain can streamline the devepment process. this guide walks you the steps to set up a new local domain using Caddy Server
+Prerequisites CaddyServer: make sure you have caddy installed on your system, if you haven&rsquo;t installed it yet, You can download and install it from the official Caddy website
+Text Editor (vscode,vim, etc&hellip;), have a text editor of your choice." />
   <meta name="author" content="sarwonous" />
   
 
@@ -123,29 +123,29 @@ if (!doNotTrack) {
 }
 </script>
   
-  <meta itemprop="name" content="Prepend your commit with JIRA ticket number">
-<meta itemprop="description" content="automaticaly prepend your commit with JIRA ticket or a branch name"><meta itemprop="datePublished" content="2021-03-18T09:37:36+00:00" />
-<meta itemprop="dateModified" content="2021-03-18T09:37:36+00:00" />
-<meta itemprop="wordCount" content="143">
-<meta itemprop="keywords" content="git,commit,jira,issue,branch," />
+  <meta itemprop="name" content="Simplified Guide: Setting Up a Local Domain with Caddy Server">
+<meta itemprop="description" content="Simplified Guide: Setting Up a Local Domain with Caddy Server"><meta itemprop="datePublished" content="2024-02-12T09:37:36+00:00" />
+<meta itemprop="dateModified" content="2024-02-12T09:37:36+00:00" />
+<meta itemprop="wordCount" content="268">
+<meta itemprop="keywords" content="caddy,local domain,proxy_pass," />
   
-  <meta property="og:title" content="Prepend your commit with JIRA ticket number" />
-<meta property="og:description" content="automaticaly prepend your commit with JIRA ticket or a branch name" />
+  <meta property="og:title" content="Simplified Guide: Setting Up a Local Domain with Caddy Server" />
+<meta property="og:description" content="Simplified Guide: Setting Up a Local Domain with Caddy Server" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://agussarwono.com/article/add-ticket-to-your-commit/" /><meta property="article:section" content="article" />
-<meta property="article:published_time" content="2021-03-18T09:37:36+00:00" />
-<meta property="article:modified_time" content="2021-03-18T09:37:36+00:00" />
+<meta property="og:url" content="https://agussarwono.com/article/setting-up-a-local-domain-with-caddy-server/" /><meta property="article:section" content="article" />
+<meta property="article:published_time" content="2024-02-12T09:37:36+00:00" />
+<meta property="article:modified_time" content="2024-02-12T09:37:36+00:00" />
 
 
   
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Prepend your commit with JIRA ticket number"/>
-<meta name="twitter:description" content="automaticaly prepend your commit with JIRA ticket or a branch name"/>
+<meta name="twitter:title" content="Simplified Guide: Setting Up a Local Domain with Caddy Server"/>
+<meta name="twitter:description" content="Simplified Guide: Setting Up a Local Domain with Caddy Server"/>
 
   
   
   
-  <link rel="canonical" href="https://agussarwono.com/article/add-ticket-to-your-commit/" />
+  <link rel="canonical" href="https://agussarwono.com/article/setting-up-a-local-domain-with-caddy-server/" />
   
   
 
@@ -254,12 +254,12 @@ if (!doNotTrack) {
 
 <article>
   <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">Prepend your commit with JIRA ticket number</h1>
+    <h1 class="!my-0 pb-2.5">Simplified Guide: Setting Up a Local Domain with Caddy Server</h1>
 
     
     <div class="text-sm antialiased opacity-60">
       
-      <time>Mar 18, 2021</time>
+      <time>Feb 12, 2024</time>
       
       
       
@@ -268,36 +268,36 @@ if (!doNotTrack) {
     
   </header>
 
-  <section><h4 id="introduction">Introduction</h4>
-<p>Tired putting your ticket number on your commit?
-Use this git hook to automatically prepend your commit with a Jira ticket based on your branch name</p>
-<p>we will use git hooks to achieve this, using the <code>prepare-commit-msg</code> hook, this will read your branch name, scan if there is a jira ticket pattern, and prepend your commit message with it</p>
-<h4 id="step-1">Step 1</h4>
-<p>Create a new <code>prepare-commit-msg</code> file or rename <code>prepare-commit-msg.sample</code> on folder <code>&lt;your-repo&gt;/.git/hooks/</code>
-<figure><img src="images/1.png"/>
-</figure>
-</p>
-<h4 id="step-2">Step 2</h4>
-<p>Use your favorite text editor, open file prepare-commit-msh and write the following code</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nv">FILE</span><span class="o">=</span><span class="nv">$1</span>
-</span></span><span class="line"><span class="cl"><span class="nv">MESSAGE</span><span class="o">=</span><span class="k">$(</span>cat <span class="nv">$FILE</span><span class="k">)</span>
+  <section><h3 id="introduction">Introduction</h3>
+<p>In the realm of web development and local testing environments, creating custom local domain can streamline the devepment process. this guide walks you the steps to set up a new local domain using Caddy Server</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>
+<p>CaddyServer: make sure you have caddy installed on your system, if you haven&rsquo;t installed it yet, You can download and install it from the official Caddy website</p>
+</li>
+<li>
+<p>Text Editor (vscode,vim, etc&hellip;), have a text editor of your choice. In this guide, we&rsquo;ll use Vim, but you can subtitute it with Nano, Emacs, or any other text editor your prefer</p>
+</li>
+</ul>
+<p>Now that you have the necessary tools in place, lets proceed with the setting up your new local domain</p>
+<h4 id="step-1-edit-the-hosts-file">Step 1: Edit the Hosts file</h4>
+<p>The Journey begin in the terminal, where you&rsquo;ll navigate to the <code>/etc/hosts</code> file and a new entry for your desired local domain. This foundational step establishes the connection between the chosen domain and your localhost, paving the way for seamless local development.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo vim /etc/hosts
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">127.0.0.1 example.local
+</span></span></code></pre></div><h4 id="step-2-update-caddyfile-configuration">Step 2: Update Caddyfile Configuration</h4>
+<p>Caddy, the modern and user-friendly web server, requires specific configurations to recognize and handle your newly created local domain. Leverage the Caddyfile syntax to tailor the server&rsquo;s behavior for your development needs. This step involves defining rules, proxy passes, or any other configurations pertinent to your project.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Caddyfile" data-lang="Caddyfile"><span class="line"><span class="cl"><span class="n">(proxy)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">TICKET</span><span class="o">=[</span><span class="k">$(</span>git rev-parse --abbrev-ref HEAD <span class="p">|</span> grep -Eo <span class="s1">&#39;^(\w+/)?(\w+[-_])?[0-9]+&#39;</span> <span class="p">|</span> grep -Eo <span class="s1">&#39;(\w+[-])?[0-9]+&#39;</span> <span class="p">|</span> tr <span class="s2">&#34;[:lower:]&#34;</span> <span class="s2">&#34;[:upper:]&#34;</span><span class="k">)</span><span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">reverse_proxy</span> <span class="s">localhost:</span><span class="se">{args.0}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[[</span><span class="nv">$TICKET</span> <span class="o">==</span> <span class="s2">&#34;[]&#34;</span> <span class="o">||</span> <span class="s2">&#34;</span><span class="nv">$MESSAGE</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;</span><span class="nv">$TICKET</span><span class="s2">&#34;</span>*<span class="o">]]</span><span class="p">;</span><span class="k">then</span>
-</span></span><span class="line"><span class="cl"><span class="nb">exit</span> 0<span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="k">fi</span>
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$TICKET</span><span class="s2"> </span><span class="nv">$MESSAGE</span><span class="s2">&#34;</span> &gt; <span class="nv">$FILE</span>
-</span></span></code></pre></div><h4 id="step-3">Step 3</h4>
-<p>Open your terminal and type the following command
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod +x &lt;yourrepo&gt;/.git/hooks/prepare-commit-msg</span></span></code></pre></div></p>
-<h4 id="step-4">Step 4</h4>
-<p>Test using git commit</p>
-<figure><img src="images/sample.png"/>
-</figure>
-
-</section>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Caddyfile" data-lang="Caddyfile"><span class="line"><span class="cl"><span class="gh">example.local</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">proxy</span> <span class="mi">4444</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h4 id="step-3-restart-or-reload-caddy">Step 3: Restart or Reload Caddy</h4>
+<p>After making changes to the Caddyfile, it&rsquo;s crucial to restart or reload the Caddy server to apply the new configurations. Use the following commands based on your system:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo systemctl reload caddy
+</span></span></code></pre></div></section>
 
   
   
@@ -305,32 +305,20 @@ Use this git hook to automatically prepend your commit with a Jira ticket based 
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://agussarwono.com/tags/git"
-      >git</a
+      href="https://agussarwono.com/tags/caddy"
+      >caddy</a
     >
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://agussarwono.com/tags/commit"
-      >commit</a
+      href="https://agussarwono.com/tags/local-domain"
+      >local domain</a
     >
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://agussarwono.com/tags/jira"
-      >jira</a
-    >
-     
-    <a
-      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://agussarwono.com/tags/issue"
-      >issue</a
-    >
-     
-    <a
-      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://agussarwono.com/tags/branch"
-      >branch</a
+      href="https://agussarwono.com/tags/proxy_pass"
+      >proxy_pass</a
     >
     
   </footer>
@@ -342,17 +330,11 @@ Use this git hook to automatically prepend your commit with a Jira ticket based 
   
   <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
     
-    <a
-      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://agussarwono.com/article/segelas-air-hangat/"
-      ><span class="mr-1.5">←</span><span>Menikmati segelas air hangat</span></a
-    >
-    
     
     <a
       class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://agussarwono.com/article/cast-interface-struct-golang/"
-      ><span>Cast an interface/struct in golang</span><span class="ml-1.5">→</span></a
+      href="https://agussarwono.com/article/segelas-air-hangat/"
+      ><span>Menikmati segelas air hangat</span><span class="ml-1.5">→</span></a
     >
     
   </nav>
