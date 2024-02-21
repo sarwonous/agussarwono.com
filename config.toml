@@ -12,9 +12,9 @@ hasCJKLanguage = true
 # enables syntax guessing for code fences without specified language
 pygmentsCodeFencesGuessSyntax = true
 # color-codes for highlighting derived from this style
-pygmentsStyle =               "monokai"
+pygmentsStyle = "monokai"
 # true: use pygments-css or false: color-codes directly
-pygmentsUseClasses =          true
+pygmentsUseClasses = true
 
 enableRobotsTXT = true
 enableEmoji = true
@@ -22,72 +22,73 @@ enableEmoji = true
 publishDir = "docs"
 
 
+# Disqus comment
+DisqusShortname = "sabdaagus"
+
 [params]
-	yandexKey = "3eedd24f89dc0e33"
-	name = "sarwonous"
-	description = "discover new posibilities"
-	bio = "&quot;World greatest Engineer&quot; said my <a href=\"http://ayunovanti.com\" target=\"_blank\">wife</a>"
-	# Enter optionally your twitter account
-	twitter = "sarwonous"
-	enableRSS = false
+yandexKey = "3eedd24f89dc0e33"
+name = "sarwonous"
+description = "discover new posibilities"
+bio = "&quot;World greatest Engineer&quot; said my <a href=\"http://ayunovanti.com\" target=\"_blank\">wife</a>"
+# Enter optionally your twitter account
+twitter = "sarwonous"
+enableRSS = false
 
-	# Disqus comment
-	disqusShortname = "sabdaagus"
-	# Disable disqus comments by set `enableDisqus = "false"`
-	enableDisqus = true
+# Disable disqus comments by set `enableDisqus = "false"`
+enableDisqus = true
 
-	# Duoshuo comment
-	duoshuoShortname = "your_duoshuo_short_name"
-	# Disable duoshuo comments by set `enableDuoshuo = "false"`
-	enableDuoshuo = false
+# Duoshuo comment
+duoshuoShortname = "your_duoshuo_short_name"
+# Disable duoshuo comments by set `enableDuoshuo = "false"`
+enableDuoshuo = false
 
-	enableGithubIssuesTips = false
+enableGithubIssuesTips = false
 
-	# Enable googleAnalytics
-	enableGoogleAnalytics = true
+# Enable googleAnalytics
+enableGoogleAnalytics = true
 
-	# Enable baiduAnalytics
-	enableBaiduAnalytics = false
-	# Baidu Tongji Code
-	baiduAnalytics = 'your_baidu_tongji_code'
+# Enable baiduAnalytics
+enableBaiduAnalytics = false
+# Baidu Tongji Code
+baiduAnalytics = 'your_baidu_tongji_code'
 
-	# Add custom assets with their paths relative to the static folder
-	customCSS = []
-	customJS  = []
+# Add custom assets with their paths relative to the static folder
+customCSS = []
+customJS = []
 
-	# The variables below are optionally too and can be used to
-	# translate or customize each string of the theme.
+# The variables below are optionally too and can be used to
+# translate or customize each string of the theme.
 
-	# Navigation links
-	home = ""
-	about = ""
-	archive = ""
-	subscribe = ""
-	tags = ""
-	# Pagination links
-	olderPosts = ""
-	newerPosts = ""
-	readMore = ""
-	copyright = ""
-	# Sharing options and author information in posts
-	aboutAuthor = "I am so interesting."
-	tweet = "sarwonous"
-	share = ""
-	# 404 page
-	title404 = ""
-	subtitle404 = ""
+# Navigation links
+home = ""
+about = ""
+archive = ""
+subscribe = ""
+tags = ""
+# Pagination links
+olderPosts = ""
+newerPosts = ""
+readMore = ""
+copyright = ""
+# Sharing options and author information in posts
+aboutAuthor = "I am so interesting."
+tweet = "sarwonous"
+share = ""
+# 404 page
+title404 = ""
+subtitle404 = ""
 
-	# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
-	iconFont = "font-awesome"
-	# The social icons can be styled differently if you use mono as font - circle, rounded, or empty
-	socialIconStyle = ""
+# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
+iconFont = "font-awesome"
+# The social icons can be styled differently if you use mono as font - circle, rounded, or empty
+socialIconStyle = ""
 
-	disableHLJS = false
-	color = "light"
+disableHLJS = false
+color = "light"
 
 
 # Add additional social link entries underneath
 [social]
-	facebook-square = "http://facebook.com/sarwonous"
-	twitter-square = "http://twitter.com/sarwonous"
-	github-square = "http://github.com/sarwonous"
+facebook-square = "http://facebook.com/sarwonous"
+twitter-square = "http://twitter.com/sarwonous"
+github-square = "http://github.com/sarwonous"
