@@ -1,11 +1,13 @@
-+++
-title = "Record Html5 Animation Using Phantomjs and Ffmpeg"
-date = 2018-01-09T15:53:09+07:00
-tags = [""]
-categories = [""]
-description = "use phantomjs and ffmpeg to created user generated video"
-draft = true
-+++
+---
+categories:
+- ""
+date: "2018-01-09T15:53:09+07:00"
+description: use phantomjs and ffmpeg to created user generated video
+draft: true
+tags:
+- ""
+title: Record Html5 Animation Using Phantomjs and Ffmpeg
+---
 
 
 A couple year ago, i was assigned to build an app that generate video based on use uploaded content, and turn it into video which could be posted on facebook, this idea came up after facebook launched `look back` feature that generate summary of user facebook profile.

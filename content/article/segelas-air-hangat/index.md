@@ -1,32 +1,29 @@
-+++
-categories = ["tips"]
-date = "2024-01-30T09:37:36Z"
-draft = false
-tags = ["air","indonesia","masak","kompor","camping","memasak"]
-title = "Menikmati segelas air hangat"
-description = "Tantangan untuk menikmati segelas air hangat"
-
-[[resources]]
-name = 'dispenser'
-src = 'images/dispenser.jpeg'
-
-[[resources]]
-name = 'teko-listrik'
-src = 'images/teko-listrik.jpeg'
-
-[[resources]]
-name = 'teko'
-src = 'images/teko.jpeg'
-
-[[resources]]
-name = 'kompor-camping'
-src = 'images/kompor-camping.jpeg'
-
-[[resources]]
-name = 'teko-camping'
-src = 'images/teko-camping.jpeg'
-
-+++
+---
+categories:
+- tips
+date: "2024-01-30T09:37:36Z"
+description: Tantangan untuk menikmati segelas air hangat
+draft: false
+resources:
+- name: dispenser
+  src: images/dispenser.jpeg
+- name: teko-listrik
+  src: images/teko-listrik.jpeg
+- name: teko
+  src: images/teko.jpeg
+- name: kompor-camping
+  src: images/kompor-camping.jpeg
+- name: teko-camping
+  src: images/teko-camping.jpeg
+tags:
+- air
+- indonesia
+- masak
+- kompor
+- camping
+- memasak
+title: Menikmati segelas air hangat
+---
 
 Salah satu kebiasaan yang saya lakukan di pagi hari adalah minum air hangat, terutama jika ditambahkan sedikit rasa manis. Selain dapat menyegarkan tubuh dan pikiran, minum air di pagi hari sangat baik untuk kesehatan, terutama jika yang diminum adalah air putih.
 

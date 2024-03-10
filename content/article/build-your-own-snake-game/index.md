@@ -1,11 +1,18 @@
-+++
-categories = ["programming"]
-date = "2021-03-18T09:37:36Z"
-draft = true
-tags = ["love","love2d","lua","game","snake","game development"]
-title = "Build your own snake game"
-description = "snake game implementation with love2d in lua"
-+++
+---
+categories:
+- programming
+date: "2021-03-18T09:37:36Z"
+description: snake game implementation with love2d in lua
+draft: true
+tags:
+- love
+- love2d
+- lua
+- game
+- snake
+- game development
+title: Build your own snake game
+---
 
 In this tutorial we will learn how to create a snake game in lua using love2d
 snake game was one of the nostalic game you ever play,

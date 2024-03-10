@@ -1,25 +1,27 @@
-+++
-categories = ["programming"]
-date = "2021-03-18T09:37:36Z"
-draft = true
-tags = ["love","love2d","lua","game","minesweeper","game development"]
-title = "Create your own minesweeper game"
-description = "minesweeper implementation with love2d in lua"
-
-[[resources]]
-name = 'step1'
-src = 'images/header.png'
-[[resources]]
-name = 'step1'
-src = 'images/1.png'
-[[resources]]
-name = 'step2'
-src = 'images/2.png'
-[[resources]]
-name = 'step3'
-src = 'images/3.png'
-
-+++
+---
+categories:
+- programming
+date: "2021-03-18T09:37:36Z"
+description: minesweeper implementation with love2d in lua
+draft: true
+resources:
+- name: step1
+  src: images/header.png
+- name: step1
+  src: images/1.png
+- name: step2
+  src: images/2.png
+- name: step3
+  src: images/3.png
+tags:
+- love
+- love2d
+- lua
+- game
+- minesweeper
+- game development
+title: Create your own minesweeper game
+---
 
 ### Minesweeper
 

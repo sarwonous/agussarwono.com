@@ -1,12 +1,15 @@
-+++
-categories = ["tips"]
-date = "2017-10-25T15:45:42+07:00"
-draft = false
-tags = ["golang","programming"]
-title = "Cast an interface/struct in golang"
-description = "cast interface in golang can be usefull when you make a modular app using golang..."
-
-+++
+---
+categories:
+- tips
+date: "2017-10-25T15:45:42+07:00"
+description: cast interface in golang can be usefull when you make a modular app using
+  golang...
+draft: false
+tags:
+- golang
+- programming
+title: Cast an interface/struct in golang
+---
 
 type casting interface in golang can be useful when you build a modular app using golang
 

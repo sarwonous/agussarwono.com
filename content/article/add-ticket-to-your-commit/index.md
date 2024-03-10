@@ -1,25 +1,26 @@
-+++
-categories = ["tips"]
-date = "2021-03-18T09:37:36Z"
-draft = false
-tags = ["git","commit","jira","issue","branch"]
-title = "Prepend your commit with JIRA ticket number"
-description = "automaticaly prepend your commit with JIRA ticket or a branch name"
-
-[[resources]]
-name = 'step1'
-src = 'images/header.png'
-[[resources]]
-name = 'step1'
-src = 'images/1.png'
-[[resources]]
-name = 'step2'
-src = 'images/2.png'
-[[resources]]
-name = 'step3'
-src = 'images/3.png'
-
-+++
+---
+categories:
+- tips
+date: "2021-03-18T09:37:36Z"
+description: automaticaly prepend your commit with JIRA ticket or a branch name
+draft: false
+resources:
+- name: step1
+  src: images/header.png
+- name: step1
+  src: images/1.png
+- name: step2
+  src: images/2.png
+- name: step3
+  src: images/3.png
+tags:
+- git
+- commit
+- jira
+- issue
+- branch
+title: Prepend your commit with JIRA ticket number
+---
 
 #### Introduction
 

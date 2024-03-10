@@ -1,11 +1,15 @@
-+++
-categories = ["tips"]
-date = "2024-02-12T09:37:36Z"
-draft = false
-tags = ["caddy","local domain","proxy_pass"]
-title = "Simplified Guide: Setting Up a Local Domain with Caddy Server"
-description = "Simplified Guide: Setting Up a Local Domain with Caddy Server"
-+++
+---
+categories:
+- tips
+date: "2024-02-12T09:37:36Z"
+description: Simplified Guide Setting Up a Local Domain with Caddy Server
+draft: false
+tags:
+- caddy
+- local domain
+- proxy_pass
+title: Simplified Guide Setting Up a Local Domain with Caddy Server
+---
 
 ### Introduction
 In the realm of web development and local testing environments, creating custom local domain can streamline the devepment process. this guide walks you the steps to set up a new local domain using Caddy Server
@@ -16,7 +20,7 @@ In the realm of web development and local testing environments, creating custom 
 
 * Text Editor (vscode,vim, etc...), have a text editor of your choice. In this guide, we'll use Vim, but you can subtitute it with Nano, Emacs, or any other text editor your prefer
 
-Now that you have the necessary tools in place, lets proceed with the setting up your new local domain 
+Now that you have the necessary tools in place, lets proceed with the setting up your new local domain
 
 #### Step 1: Edit the Hosts file
 
