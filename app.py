@@ -3,6 +3,9 @@ import os
 from pathlib import Path
 import frontmatter
 from frontmatter.default_handlers import YAMLHandler
+from slugify import slugify
+from json import dumps
+
 
 app = Flask(__name__)
 
@@ -14,8 +17,10 @@ def get_articles():
         with open(file_path, "r", encoding="utf-8") as file:
             article = frontmatter.load(file, handler=YAMLHandler())
             articles.append({
-                "title": article["title"],
-                "content": article.content
+                "title": article.get("title"),
+                "content": article.content,
+                "summary": article.get("summary", default=""),
+                "slug": "/%s/%s" % ("article",slugify(article.get("title")))
             })
 
     return articles

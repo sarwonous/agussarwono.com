@@ -20,6 +20,8 @@ tags:
 - issue
 - branch
 title: Prepend your commit with JIRA ticket number
+summary:
+  summary
 ---
 
 #### Introduction
