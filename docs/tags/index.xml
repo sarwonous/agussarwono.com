@@ -4,251 +4,198 @@
     <title>Tags on agus sarwono - programming for dummies</title>
     <link>https://agussarwono.com/tags/</link>
     <description>Recent content in Tags on agus sarwono - programming for dummies</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jul 2024 09:30:00 +0700</lastBuildDate><atom:link href="https://agussarwono.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Jul 2024 09:30:00 +0700</lastBuildDate>
+    <atom:link href="https://agussarwono.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>bore</title>
+      <title>Bore</title>
       <link>https://agussarwono.com/tags/bore/</link>
       <pubDate>Wed, 17 Jul 2024 09:30:00 +0700</pubDate>
-      
       <guid>https://agussarwono.com/tags/bore/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>localhost</title>
+      <title>Localhost</title>
       <link>https://agussarwono.com/tags/localhost/</link>
       <pubDate>Wed, 17 Jul 2024 09:30:00 +0700</pubDate>
-      
       <guid>https://agussarwono.com/tags/localhost/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>localtunnel</title>
+      <title>Localtunnel</title>
       <link>https://agussarwono.com/tags/localtunnel/</link>
       <pubDate>Wed, 17 Jul 2024 09:30:00 +0700</pubDate>
-      
       <guid>https://agussarwono.com/tags/localtunnel/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>ngrok</title>
+      <title>Ngrok</title>
       <link>https://agussarwono.com/tags/ngrok/</link>
       <pubDate>Wed, 17 Jul 2024 09:30:00 +0700</pubDate>
-      
       <guid>https://agussarwono.com/tags/ngrok/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>secure</title>
+      <title>Secure</title>
       <link>https://agussarwono.com/tags/secure/</link>
       <pubDate>Wed, 17 Jul 2024 09:30:00 +0700</pubDate>
-      
       <guid>https://agussarwono.com/tags/secure/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>ssh</title>
+      <title>Ssh</title>
       <link>https://agussarwono.com/tags/ssh/</link>
       <pubDate>Wed, 17 Jul 2024 09:30:00 +0700</pubDate>
-      
       <guid>https://agussarwono.com/tags/ssh/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>tunnel</title>
+      <title>Tunnel</title>
       <link>https://agussarwono.com/tags/tunnel/</link>
       <pubDate>Wed, 17 Jul 2024 09:30:00 +0700</pubDate>
-      
       <guid>https://agussarwono.com/tags/tunnel/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>tunneling</title>
+      <title>Tunneling</title>
       <link>https://agussarwono.com/tags/tunneling/</link>
       <pubDate>Wed, 17 Jul 2024 09:30:00 +0700</pubDate>
-      
       <guid>https://agussarwono.com/tags/tunneling/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>markdown</title>
+      <title>Markdown</title>
       <link>https://agussarwono.com/tags/markdown/</link>
       <pubDate>Tue, 12 Mar 2024 12:56:36 +0700</pubDate>
-      
       <guid>https://agussarwono.com/tags/markdown/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>programming</title>
+      <title>Programming</title>
       <link>https://agussarwono.com/tags/programming/</link>
       <pubDate>Tue, 12 Mar 2024 12:56:36 +0700</pubDate>
-      
       <guid>https://agussarwono.com/tags/programming/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>python</title>
+      <title>Python</title>
       <link>https://agussarwono.com/tags/python/</link>
       <pubDate>Tue, 12 Mar 2024 12:56:36 +0700</pubDate>
-      
       <guid>https://agussarwono.com/tags/python/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>tutorial</title>
+      <title>Tutorial</title>
       <link>https://agussarwono.com/tags/tutorial/</link>
       <pubDate>Tue, 12 Mar 2024 12:56:36 +0700</pubDate>
-      
       <guid>https://agussarwono.com/tags/tutorial/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>caddy</title>
+      <title>Caddy</title>
       <link>https://agussarwono.com/tags/caddy/</link>
       <pubDate>Mon, 12 Feb 2024 09:37:36 +0000</pubDate>
-      
       <guid>https://agussarwono.com/tags/caddy/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>local domain</title>
+      <title>Local Domain</title>
       <link>https://agussarwono.com/tags/local-domain/</link>
       <pubDate>Mon, 12 Feb 2024 09:37:36 +0000</pubDate>
-      
       <guid>https://agussarwono.com/tags/local-domain/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>proxy_pass</title>
+      <title>Proxy_pass</title>
       <link>https://agussarwono.com/tags/proxy_pass/</link>
       <pubDate>Mon, 12 Feb 2024 09:37:36 +0000</pubDate>
-      
       <guid>https://agussarwono.com/tags/proxy_pass/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>air</title>
+      <title>Air</title>
       <link>https://agussarwono.com/tags/air/</link>
       <pubDate>Tue, 30 Jan 2024 09:37:36 +0000</pubDate>
-      
       <guid>https://agussarwono.com/tags/air/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>camping</title>
+      <title>Camping</title>
       <link>https://agussarwono.com/tags/camping/</link>
       <pubDate>Tue, 30 Jan 2024 09:37:36 +0000</pubDate>
-      
       <guid>https://agussarwono.com/tags/camping/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>indonesia</title>
+      <title>Indonesia</title>
       <link>https://agussarwono.com/tags/indonesia/</link>
       <pubDate>Tue, 30 Jan 2024 09:37:36 +0000</pubDate>
-      
       <guid>https://agussarwono.com/tags/indonesia/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>kompor</title>
+      <title>Kompor</title>
       <link>https://agussarwono.com/tags/kompor/</link>
       <pubDate>Tue, 30 Jan 2024 09:37:36 +0000</pubDate>
-      
       <guid>https://agussarwono.com/tags/kompor/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>masak</title>
+      <title>Masak</title>
       <link>https://agussarwono.com/tags/masak/</link>
       <pubDate>Tue, 30 Jan 2024 09:37:36 +0000</pubDate>
-      
       <guid>https://agussarwono.com/tags/masak/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>memasak</title>
+      <title>Memasak</title>
       <link>https://agussarwono.com/tags/memasak/</link>
       <pubDate>Tue, 30 Jan 2024 09:37:36 +0000</pubDate>
-      
       <guid>https://agussarwono.com/tags/memasak/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>branch</title>
+      <title>Branch</title>
       <link>https://agussarwono.com/tags/branch/</link>
       <pubDate>Thu, 18 Mar 2021 09:37:36 +0000</pubDate>
-      
       <guid>https://agussarwono.com/tags/branch/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>commit</title>
+      <title>Commit</title>
       <link>https://agussarwono.com/tags/commit/</link>
       <pubDate>Thu, 18 Mar 2021 09:37:36 +0000</pubDate>
-      
       <guid>https://agussarwono.com/tags/commit/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>git</title>
+      <title>Git</title>
       <link>https://agussarwono.com/tags/git/</link>
       <pubDate>Thu, 18 Mar 2021 09:37:36 +0000</pubDate>
-      
       <guid>https://agussarwono.com/tags/git/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>issue</title>
+      <title>Issue</title>
       <link>https://agussarwono.com/tags/issue/</link>
       <pubDate>Thu, 18 Mar 2021 09:37:36 +0000</pubDate>
-      
       <guid>https://agussarwono.com/tags/issue/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>jira</title>
+      <title>Jira</title>
       <link>https://agussarwono.com/tags/jira/</link>
       <pubDate>Thu, 18 Mar 2021 09:37:36 +0000</pubDate>
-      
       <guid>https://agussarwono.com/tags/jira/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>golang</title>
+      <title>Golang</title>
       <link>https://agussarwono.com/tags/golang/</link>
       <pubDate>Wed, 25 Oct 2017 15:45:42 +0700</pubDate>
-      
       <guid>https://agussarwono.com/tags/golang/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

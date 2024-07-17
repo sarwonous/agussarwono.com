@@ -3,7 +3,41 @@ baseURL: "https://agussarwono.com/"
 languageCode: "en-us"
 title: "agus sarwono - programming for dummies"
 theme:
-  - mini
+  - paper
 googleAnalytics: "UA-12740249-3"
 enableRobotsTXT: true
 publishDir: "docs"
+
+
+disqusShortname: 'sabdaagus'   # use disqus comments
+
+params:
+  siteLogo: "SEKANULIS"
+  # color style
+  color: 'gray'                           # linen, wheat, gray, light
+
+  # header social icons
+  # twitter: 'YOUR_TWITTER_ID'               # twitter.com/YOUR_TWITTER_ID
+  # github: 'YOUR_GITHUB_ID'                 # github.com/YOUR_GITHUB_ID
+  # instagram: 'YOUR_INSTAGRAM_ID'           # instagram.com/YOUR_INSTAGRAM_ID
+  # linkedin: 'YOUR_LINKEDIN_ID'             # linkedin.com/in/YOUR_LINKEDIN_ID
+  # mastodon: 'YOUR_MASTODON_LINK'           # e.g. 'https://mastodon.instance/@xxx'
+  # threads: '@YOUR_THREADS_ID'              # threads.net/@YOUR_THREADS_ID
+  rss: true                                # show rss icon
+
+  # home page profile
+  # avatar: 'dahlian.ayunovanti@gmail.com'                 # gravatar email or image url
+  # name: 'YOUR_NAME'
+  # bio: 'YOUR_BIO'
+
+
+  # misc
+  disableHLJS: false                        # disable highlight.js
+  disablePostNavigation: true              # disable post navigation
+  monoDarkIcon: true                       # show monochrome dark mode icon
+  # gravatarCdn: 'GRAVATAR_CDN_LINK'         # e.g. 'https://cdn.v2ex.com/gravatar/'
+  # math: true                               # enable KaTeX math typesetting globally
+  # localKatex: false                        # use local KaTeX js/css instead of CDN
+  # graphCommentId: "YOUR_GRAPH_COMMENT_ID"  # use graph comment (disqus alternative)
+  favicon: "favicon.ico"                   # customize the default favicon
+  # appleTouchIcon: "apple-touch-icon.png"   # customize the default Apple touch icon
