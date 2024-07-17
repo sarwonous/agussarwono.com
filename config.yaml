@@ -1,0 +1,9 @@
+staticDir: ["static", "read"]
+baseURL: "https://agussarwono.com/"
+languageCode: "en-us"
+title: "agus sarwono - programming for dummies"
+theme:
+  - mini
+googleAnalytics: "UA-12740249-3"
+enableRobotsTXT: true
+publishDir: "docs"

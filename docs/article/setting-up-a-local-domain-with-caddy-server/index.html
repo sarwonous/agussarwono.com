@@ -1,277 +1,77 @@
-<!doctype html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<html
-  class="not-ready lg:text-base"
-  style="--bg: #fff"
-  lang="en-us"
->
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
+    <title>Simplified Guide Setting Up a Local Domain with Caddy Server | agus sarwono - programming for dummies</title>
 
-  
-  <title>Simplified Guide Setting Up a Local Domain with Caddy Server - agus sarwono - programming for dummies</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="Simplified Guide Setting Up a Local Domain with Caddy Server">
+<meta name="generator" content="Hugo 0.100.2" />
 
-  
-  <meta name="theme-color" />
 
-  
-  
-  
-  
-  <meta name="description" content="Introduction In the realm of web development and local testing environments, creating custom local domain can streamline the devepment process. this guide walks you the steps to set up a new local domain using Caddy Server
-Prerequisites CaddyServer: make sure you have caddy installed on your system, if you haven&rsquo;t installed it yet, You can download and install it from the official Caddy website
-Text Editor (vscode,vim, etc&hellip;), have a text editor of your choice." />
-  <meta name="author" content="sarwonous" />
-  
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-  
-  
-  
-  
-  
-  
-  <link rel="preload stylesheet" as="style" href="https://agussarwono.com/main.min.css" />
 
-  
-  
-  
-  
-  
-  <link rel="preload" as="image" href="https://agussarwono.com/theme.png" />
+<link rel="stylesheet" href="/css/style.css">
 
-  
-  
-  
-  
-  
 
-  
-  
-  <link rel="preload" as="image" href="https://agussarwono.com/twitter.svg" />
-  
-  
 
-  
-  
-  <script
-    defer
-    src="https://agussarwono.com/highlight.min.js"
-    onload="hljs.initHighlightingOnLoad();"
-  ></script>
-  
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 
-  
-  
-  
 
-  
-  <link rel="icon" href="https://agussarwono.com/favicon.ico" />
-  <link rel="apple-touch-icon" href="https://agussarwono.com/apple-touch-icon.png" />
 
-  
-  <meta name="generator" content="Hugo 0.100.2" />
 
-  
-  
-  
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-12740249-3', 'auto');
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
 	
-	ga('send', 'pageview');
-}
-</script>
-  
-  <meta itemprop="name" content="Simplified Guide Setting Up a Local Domain with Caddy Server">
-<meta itemprop="description" content="Simplified Guide Setting Up a Local Domain with Caddy Server"><meta itemprop="datePublished" content="2024-02-12T09:37:36+00:00" />
-<meta itemprop="dateModified" content="2024-02-12T09:37:36+00:00" />
-<meta itemprop="wordCount" content="268">
-<meta itemprop="keywords" content="caddy,local domain,proxy_pass," />
-  
-  <meta property="og:title" content="Simplified Guide Setting Up a Local Domain with Caddy Server" />
-<meta property="og:description" content="Simplified Guide Setting Up a Local Domain with Caddy Server" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://agussarwono.com/article/setting-up-a-local-domain-with-caddy-server/" /><meta property="article:section" content="article" />
-<meta property="article:published_time" content="2024-02-12T09:37:36+00:00" />
-<meta property="article:modified_time" content="2024-02-12T09:37:36+00:00" />
+		<a href="/"> <span class="arrow">←</span>Home</a>
+	
+	<a href="/posts">Archive</a>
+	<a href="/tags">Tags</a>
+	<a href="/about">About</a>
+
+	
+
+	
+</nav>
 
 
-  
-  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Simplified Guide Setting Up a Local Domain with Caddy Server"/>
-<meta name="twitter:description" content="Simplified Guide Setting Up a Local Domain with Caddy Server"/>
-
-  
-  
-  
-  <link rel="canonical" href="https://agussarwono.com/article/setting-up-a-local-domain-with-caddy-server/" />
-  
-  
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-</head>
-
-  <body class="text-black duration-200 ease-out dark:text-white">
-    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
-  <div class="relative z-50 mr-auto flex items-center">
-    <a
-      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
-      href="https://agussarwono.com/"
-      >agus sarwono - programming for dummies</a
-    >
-    <div
-      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
-      role="button"
-      aria-label="Dark"
-    ></div>
-  </div>
-
-  <div
-    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
-    role="button"
-    aria-label="Menu"
-  ></div>
-
-  
-
-  <script>
-    
-    const htmlClass = document.documentElement.classList;
-    setTimeout(() => {
-      htmlClass.remove('not-ready');
-    }, 10);
-
-    
-    const btnMenu = document.querySelector('.btn-menu');
-    btnMenu.addEventListener('click', () => {
-      htmlClass.toggle('open');
-    });
-
-    
-    const metaTheme = document.querySelector('meta[name="theme-color"]');
-    const lightBg = '#fff'.replace(/"/g, '');
-    const setDark = (isDark) => {
-      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
-      htmlClass[isDark ? 'add' : 'remove']('dark');
-      localStorage.setItem('dark', isDark);
-    };
-
-    
-    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    if (htmlClass.contains('dark')) {
-      setDark(true);
-    } else {
-      const darkVal = localStorage.getItem('dark');
-      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
-    }
-
-    
-    darkScheme.addEventListener('change', (event) => {
-      setDark(event.matches);
-    });
-
-    
-    const btnDark = document.querySelector('.btn-dark');
-    btnDark.addEventListener('click', () => {
-      setDark(localStorage.getItem('dark') !== 'true');
-    });
-  </script>
-
-  <div
-    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
-  >
-    
-    
-
-    
-    <nav
-      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
-    >
-      
-      <a
-        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
-        style="--url: url(./twitter.svg)"
-        href="https://twitter.com/sarwonous"
-        target="_blank"
-        rel="me"
-      >
-        twitter
-      </a>
-      
-    </nav>
-    
-  </div>
-</header>
-
-
-    <main
-      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
-    >
+    <main class="main">
       
 
-<article>
-  <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">Simplified Guide Setting Up a Local Domain with Caddy Server</h1>
+<section id="single">
+    <h1 class="title">Simplified Guide Setting Up a Local Domain with Caddy Server</h1>
 
-    
-    <div class="text-sm antialiased opacity-60">
-      
-      <time>Feb 12, 2024</time>
-      
-      
-      
-      
+    <div class="tip">
+        <time datetime="2024-02-12 09:37:36 &#43;0000 UTC">Feb 12, 2024</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          269 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          2 minute read
+        </span>
     </div>
-    
-  </header>
 
-  <section><h3 id="introduction">Introduction</h3>
-<p>In the realm of web development and local testing environments, creating custom local domain can streamline the devepment process. this guide walks you the steps to set up a new local domain using Caddy Server</p>
-<h3 id="prerequisites">Prerequisites</h3>
-<ul>
+    
+    
+
+
+    <div class="content">
+      <h3 id="introduction">Introduction <a href="#introduction" class="anchor">🔗</a></h3><p>In the realm of web development and local testing environments, creating custom local domain can streamline the devepment process. this guide walks you the steps to set up a new local domain using Caddy Server</p>
+<h3 id="prerequisites">Prerequisites <a href="#prerequisites" class="anchor">🔗</a></h3><ul>
 <li>
 <p>CaddyServer: make sure you have caddy installed on your system, if you haven&rsquo;t installed it yet, You can download and install it from the official Caddy website</p>
 </li>
@@ -280,105 +80,66 @@ if (!doNotTrack) {
 </li>
 </ul>
 <p>Now that you have the necessary tools in place, lets proceed with the setting up your new local domain</p>
-<h4 id="step-1-edit-the-hosts-file">Step 1: Edit the Hosts file</h4>
-<p>The Journey begin in the terminal, where you&rsquo;ll navigate to the <code>/etc/hosts</code> file and a new entry for your desired local domain. This foundational step establishes the connection between the chosen domain and your localhost, paving the way for seamless local development.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo vim /etc/hosts
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">127.0.0.1 example.local
-</span></span></code></pre></div><h4 id="step-2-update-caddyfile-configuration">Step 2: Update Caddyfile Configuration</h4>
-<p>Caddy, the modern and user-friendly web server, requires specific configurations to recognize and handle your newly created local domain. Leverage the Caddyfile syntax to tailor the server&rsquo;s behavior for your development needs. This step involves defining rules, proxy passes, or any other configurations pertinent to your project.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Caddyfile" data-lang="Caddyfile"><span class="line"><span class="cl"><span class="n">(proxy)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">reverse_proxy</span> <span class="s">localhost:</span><span class="se">{args.0}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Caddyfile" data-lang="Caddyfile"><span class="line"><span class="cl"><span class="gh">example.local</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="k">proxy</span> <span class="mi">4444</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><h4 id="step-3-restart-or-reload-caddy">Step 3: Restart or Reload Caddy</h4>
-<p>After making changes to the Caddyfile, it&rsquo;s crucial to restart or reload the Caddy server to apply the new configurations. Use the following commands based on your system:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo systemctl reload caddy
-</span></span></code></pre></div></section>
+<h4 id="step-1-edit-the-hosts-file">Step 1: Edit the Hosts file <a href="#step-1-edit-the-hosts-file" class="anchor">🔗</a></h4><p>The Journey begin in the terminal, where you&rsquo;ll navigate to the <code>/etc/hosts</code> file and a new entry for your desired local domain. This foundational step establishes the connection between the chosen domain and your localhost, paving the way for seamless local development.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo vim /etc/hosts
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>127.0.0.1 example.local
+</span></span></code></pre></div><h4 id="step-2-update-caddyfile-configuration">Step 2: Update Caddyfile Configuration <a href="#step-2-update-caddyfile-configuration" class="anchor">🔗</a></h4><p>Caddy, the modern and user-friendly web server, requires specific configurations to recognize and handle your newly created local domain. Leverage the Caddyfile syntax to tailor the server&rsquo;s behavior for your development needs. This step involves defining rules, proxy passes, or any other configurations pertinent to your project.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Caddyfile" data-lang="Caddyfile"><span style="display:flex;"><span>(proxy) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">reverse_proxy</span> <span style="color:#e6db74">localhost:</span><span style="color:#ae81ff">{args.0}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Caddyfile" data-lang="Caddyfile"><span style="display:flex;"><span>example.local {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">proxy</span> <span style="color:#ae81ff">4444</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="step-3-restart-or-reload-caddy">Step 3: Restart or Reload Caddy <a href="#step-3-restart-or-reload-caddy" class="anchor">🔗</a></h4><p>After making changes to the Caddyfile, it&rsquo;s crucial to restart or reload the Caddy server to apply the new configurations. Use the following commands based on your system:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo systemctl reload caddy
+</span></span></code></pre></div>
+    </div>
 
-  
-  
-  <footer class="mt-12 flex flex-wrap">
-     
-    <a
-      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://agussarwono.com/tags/caddy"
-      >caddy</a
-    >
-     
-    <a
-      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://agussarwono.com/tags/local-domain"
-      >local domain</a
-    >
-     
-    <a
-      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="https://agussarwono.com/tags/proxy_pass"
-      >proxy_pass</a
-    >
     
-  </footer>
-  
-
-  
-  
-  
-  
-  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
-    
-    <a
-      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://agussarwono.com/article/simple-blog-api-using-python-flask-and-markdown/"
-      ><span class="mr-1.5">←</span><span>Simple blog api using python flask and markdown</span></a
-    >
+        <div class="tags">
+            
+                <a href="https://agussarwono.com/tags/caddy">caddy</a>
+            
+                <a href="https://agussarwono.com/tags/local-domain">local domain</a>
+            
+                <a href="https://agussarwono.com/tags/proxy_pass">proxy_pass</a>
+            
+        </div>
     
     
-    <a
-      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://agussarwono.com/article/segelas-air-hangat/"
-      ><span>Menikmati segelas air hangat</span><span class="ml-1.5">→</span></a
-    >
     
-  </nav>
-  
-  
 
-  
-  
-  <div class="mt-24" id="disqus_thread"></div>
-  <script>
-    const disqusShortname = 'sabdaagus';
-    const script = document.createElement('script');
-    script.src = 'https://' + disqusShortname + '.disqus.com/embed.js';
-    script.setAttribute('data-timestamp', +new Date());
-    document.head.appendChild(script);
-  </script>
-  
-
-  
-  
-
-  
-
-
-  
-</article>
+</section>
 
 
     </main>
+    
+    <footer id="footer">
+    
 
-    <footer
-  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
->
-  <div class="mr-auto">
-    &copy; 2024
-    <a class="link" href="https://agussarwono.com/">agus sarwono - programming for dummies</a>
-  </div>
+    <div class="copyright">
+    
+       © Copyright 
+       2024 
+       <span class="split">
+        <svg fill="#bbbbbb" width="15" height="15" version="1.1" id="heart-15" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 15 15">
+  <path d="M13.91,6.75c-1.17,2.25-4.3,5.31-6.07,6.94c-0.1903,0.1718-0.4797,0.1718-0.67,0C5.39,12.06,2.26,9,1.09,6.75&#xA;&#x9;C-1.48,1.8,5-1.5,7.5,3.45C10-1.5,16.48,1.8,13.91,6.75z"/>
+</svg>
+       </span>
+       
+    
+    </div>
+
+    
+      <div class="powerby">
+        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+      </div>
+    
 </footer>
+
+
 
   </body>
 </html>

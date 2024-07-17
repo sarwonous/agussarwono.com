@@ -1,0 +1,20 @@
+
+[
+ 
+    {
+        "title": "About AgusSarwono.com",
+        "index": 0,
+        "page": Page(/about.md),
+        "paginator": 10
+    }
+    
+
+    {
+        "title": "Articles",
+        "index": 1,
+        "page": Page(/article),
+        "paginator": 10
+    }
+    
+
+]
