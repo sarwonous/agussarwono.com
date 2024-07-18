@@ -2,13 +2,13 @@
 categories:
 - tips
 date: "2024-02-12T09:37:36Z"
-description: Simplified Guide Setting Up a Local Domain with Caddy Server
+description: Simple Guide to Setting Up a Local Domain with Server Caddy
 draft: false
 tags:
 - caddy
 - local domain
 - proxy_pass
-title: Simplified Guide Setting Up a Local Domain with Caddy Server
+title: Simple Guide to Setting Up a Local Domain with Server Caddy
 ---
 
 ### Introduction
