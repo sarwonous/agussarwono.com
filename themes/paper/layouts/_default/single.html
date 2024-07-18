@@ -21,6 +21,8 @@
 
   <section>{{ .Content }}</section>
 
+  {{ partial "social.html" . }}
+
   <!-- Post Tags -->
   {{ if .Params.tags }}
   <footer class="mt-12 flex flex-wrap">
@@ -59,7 +61,7 @@
 
   <!-- Disqus -->
   {{ if and .Site.Config.Services.Disqus.Shortname (not (eq .Params.comments false)) }}
-  <div class="mt-24" id="disqus_thread"></div>
+  <div class="mt-24 text-black dark:text-white" id="disqus_thread"></div>
   <script>
     const disqusShortname = '{{ .Site.Config.Services.Disqus.Shortname }}';
     const script = document.createElement('script');

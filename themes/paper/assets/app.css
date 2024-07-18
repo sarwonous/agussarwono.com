@@ -4,15 +4,19 @@
  * https://github.com/nanxiaobei/hugo-paper
  * Designed by 南小北 https://lee.so/
  */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  
+  
   html,
   body {
     @apply h-full;
+    font-family: "Nunito", sans-serif;
   }
 
   html {
@@ -121,5 +125,13 @@
 
   article .highlight > div table tr td:last-of-type {
     @apply overflow-auto;
+  }
+
+  .prose figure {
+    object-fit: cover;
+  }
+
+  .prose img {
+      @apply rounded-md w-full;
   }
 }
