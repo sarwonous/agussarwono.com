@@ -24,7 +24,7 @@ Now that you have the necessary tools in place, lets proceed with the setting up
 
 #### Step 1: Edit the Hosts file
 
-The Journey begin in the terminal, where you'll navigate to the `/etc/hosts` file and a new entry for your desired local domain. This foundational step establishes the connection between the chosen domain and your localhost, paving the way for seamless local development.
+The Journey begin in the terminal, where you'll navigate to the `/etc/hosts` file and add a new entry for your desired local domain. This foundational step establishes the connection between the chosen domain and your localhost, paving the way for seamless local development.
 
 ```shell
 sudo vim /etc/hosts

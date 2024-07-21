@@ -24,7 +24,7 @@ tags:
 - tunneling
 - ngrok
 - localtunnel
-title: Bore - Simple open source tunnel to localhost
+title: "Bore: The Open-Source Tool for Effortless Localhost Tunneling"
 ---
 
 

@@ -25,7 +25,9 @@ disqusShortname: 'sabdaagus'   # use disqus comments
 params:
   siteLogo: "SEKANULIS"
   # color style
-  color: 'gray'                           # linen, wheat, gray, light
+  color: 'gray'     
+  
+  articleUrl: "/article"                      # linen, wheat, gray, light
 
   # header social icons
   twitter: '@sarwonous'               # twitter.com/YOUR_TWITTER_ID
