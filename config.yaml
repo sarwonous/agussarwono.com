@@ -27,20 +27,20 @@ outputs:
     - html
 
 params:
-  siteLogo: "SEKANULIS"
+  siteLogo: "agussarwono.com"
   # color style
   color: 'gray'     
   
   articleUrl: "/article"                      # linen, wheat, gray, light
 
   # header social icons
-  twitter: '@sarwonous'               # twitter.com/YOUR_TWITTER_ID
+  # twitter: '@sarwonous'               # twitter.com/YOUR_TWITTER_ID
   github: '@sarwonous'                 # github.com/YOUR_GITHUB_ID
   instagram: '@sarwonous'           # instagram.com/YOUR_INSTAGRAM_ID
   linkedin: 'sarwonous'             # linkedin.com/in/YOUR_LINKEDIN_ID
   # mastodon: 'YOUR_MASTODON_LINK'           # e.g. 'https://mastodon.instance/@xxx'
   # threads: '@YOUR_THREADS_ID'              # threads.net/@YOUR_THREADS_ID
-  rss: true                                # show rss icon
+  # rss: true                                # show rss icon
 
   # home page profile
   # avatar: 'agus.sarwono@gmail.com'                 # gravatar email or image url

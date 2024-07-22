@@ -4,7 +4,7 @@
  * https://github.com/nanxiaobei/hugo-paper
  * Designed by 南小北 https://lee.so/
  */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Special+Elite&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,7 +16,7 @@
   html,
   body {
     @apply h-full;
-    font-family: "Nunito", sans-serif;
+    font-family: "Special Elite", "Nunito", sans-serif;
   }
 
   html {
@@ -28,6 +28,10 @@
     background: var(--bg);
 
     @apply dark:bg-black/90;
+  }
+
+  .text-playwrite {
+    font-family: "Special Elite", "Playwrite AR", "Nunito",sans-serif;
   }
 }
 

@@ -1,3 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Caddy on agus sarwono - programming for dummies</title><link>https://agussarwono.com/tags/caddy/</link><description>Recent content in Caddy on agus sarwono - programming for dummies</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 12 Feb 2024 09:37:36 +0000</lastBuildDate><atom:link href="https://agussarwono.com/tags/caddy/index.xml" rel="self" type="application/rss+xml"/><item><title>Simple Guide to Setting Up a Local Domain with Server Caddy</title><link>https://agussarwono.com/article/setting-up-a-local-domain-with-caddy-server/</link><pubDate>Mon, 12 Feb 2024 09:37:36 +0000</pubDate><guid>https://agussarwono.com/article/setting-up-a-local-domain-with-caddy-server/</guid><description>Introduction In the realm of web development and local testing environments, creating custom local domain can streamline the devepment process. this guide walks you the steps to set up a new local domain using Caddy Server
-Prerequisites CaddyServer: make sure you have caddy installed on your system, if you haven&amp;rsquo;t installed it yet, You can download and install it from the official Caddy website
-Text Editor (vscode,vim, etc&amp;hellip;), have a text editor of your choice.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Caddy on agus sarwono - programming for dummies</title>
+    <link>https://agussarwono.com/tags/caddy/</link>
+    <description>Recent content in Caddy on agus sarwono - programming for dummies</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Feb 2024 09:37:36 +0000</lastBuildDate>
+    <atom:link href="https://agussarwono.com/tags/caddy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simple Guide to Setting Up a Local Domain with Server Caddy</title>
+      <link>https://agussarwono.com/article/setting-up-a-local-domain-with-caddy-server/</link>
+      <pubDate>Mon, 12 Feb 2024 09:37:36 +0000</pubDate>
+      <guid>https://agussarwono.com/article/setting-up-a-local-domain-with-caddy-server/</guid>
+      <description>Introduction In the realm of web development and local testing environments, creating custom local domain can streamline the devepment process. this guide walks you the steps to set up a new local domain using Caddy Server&#xA;Prerequisites CaddyServer: make sure you have caddy installed on your system, if you haven&amp;rsquo;t installed it yet, You can download and install it from the official Caddy website&#xA;Text Editor (vscode,vim, etc&amp;hellip;), have a text editor of your choice.</description>
+    </item>
+  </channel>
+</rss>
