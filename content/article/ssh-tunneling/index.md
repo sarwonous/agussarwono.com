@@ -4,9 +4,10 @@ categories:
 date: "2024-07-17T09:30:00+07:00"
 description: We will learn how to expose your local development using bore as ngrok open source alternative
 draft: false
+thumbnail: https://bore.digital/bore.svg
 # resources:
-# - name: dispenser
-#   src: images/dispenser.jpeg
+# - name: logo
+#   src: https://bore.digital/bore.svg
 # - name: teko-listrik
 #   src: images/teko-listrik.jpeg
 # - name: teko

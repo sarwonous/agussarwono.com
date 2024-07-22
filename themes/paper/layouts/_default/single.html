@@ -1,6 +1,8 @@
 {{ define "main" }}
-
-<article>
+{{ if .Params.Thumbnail }}
+<div class="flex justify-center m-6"><img class="w-16" src="{{ .Params.Thumbnail }}" alt="image" /></div>
+{{ end }}
+<article class="prose prose-neutral dark:prose-invert mx-auto">
   <header class="mb-16">
     <h1 class="!my-0 pb-2.5">{{ .Title }}</h1>
 
