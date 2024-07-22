@@ -22,6 +22,7 @@ tags:
 - kompor
 - camping
 - memasak
+- tips
 title: Menikmati segelas air hangat
 ---
 

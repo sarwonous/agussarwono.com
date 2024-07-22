@@ -22,6 +22,10 @@ menu:
 
 disqusShortname: 'sabdaagus'   # use disqus comments
 
+outputs:
+  home:
+    - html
+
 params:
   siteLogo: "SEKANULIS"
   # color style

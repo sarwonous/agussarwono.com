@@ -8,6 +8,7 @@ tags:
 - caddy
 - local domain
 - proxy_pass
+- tips
 title: Simple Guide to Setting Up a Local Domain with Server Caddy
 ---
 

@@ -17,6 +17,7 @@ draft: false
 #   src: images/teko-camping.jpeg
 tags:
 - bore
+- tips
 - secure
 - tunnel
 - ssh
@@ -24,6 +25,7 @@ tags:
 - tunneling
 - ngrok
 - localtunnel
+- tutorial
 title: "Bore: The Open-Source Tool for Effortless Localhost Tunneling"
 ---
 
