@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Experiences on agus sarwono - programming for dummies</title>
+    <link>https://agussarwono.com/experience/</link>
+    <description>Recent content in Experiences on agus sarwono - programming for dummies</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0700</lastBuildDate>
+    <atom:link href="https://agussarwono.com/experience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Senior Frontend Engineer</title>
+      <link>https://agussarwono.com/experience/fe-sfe-okadoc/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0700</pubDate>
+      <guid>https://agussarwono.com/experience/fe-sfe-okadoc/</guid>
+      <description>&lt;p&gt;Results-oriented frontend developer with a proven track record of building scalable and user-friendly web applications. Expert in React and other modern frontend frameworks. Collaborate seamlessly with cross-functional teams to translate business needs into innovative digital solutions. Passionate about delivering exceptional user experiences on the Okadoc platform.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Frontend Lead</title>
+      <link>https://agussarwono.com/experience/fe-lead-mm/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0700</pubDate>
+      <guid>https://agussarwono.com/experience/fe-lead-mm/</guid>
+      <description>&lt;p&gt;Results-oriented frontend developer with a proven track record of building scalable and user-friendly web applications. Expert in React and other modern frontend frameworks. Collaborate seamlessly with cross-functional teams to translate business needs into innovative digital solutions. Passionate about delivering exceptional user experiences on the Okadoc platform.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Senior Frontend Engineer</title>
+      <link>https://agussarwono.com/experience/fe-sfe-mm/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 +0700</pubDate>
+      <guid>https://agussarwono.com/experience/fe-sfe-mm/</guid>
+      <description>&lt;p&gt;Results-oriented frontend developer with a proven track record of building scalable and user-friendly web applications. Expert in React and other modern frontend frameworks. Collaborate seamlessly with cross-functional teams to translate business needs into innovative digital solutions. Passionate about delivering exceptional user experiences on the Okadoc platform.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

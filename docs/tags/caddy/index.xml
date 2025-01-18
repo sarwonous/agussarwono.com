@@ -13,7 +13,7 @@
       <link>https://agussarwono.com/article/setting-up-a-local-domain-with-caddy-server/</link>
       <pubDate>Mon, 12 Feb 2024 09:37:36 +0000</pubDate>
       <guid>https://agussarwono.com/article/setting-up-a-local-domain-with-caddy-server/</guid>
-      <description>Introduction In the realm of web development and local testing environments, creating custom local domain can streamline the devepment process. this guide walks you the steps to set up a new local domain using Caddy Server&#xA;Prerequisites CaddyServer: make sure you have caddy installed on your system, if you haven&amp;rsquo;t installed it yet, You can download and install it from the official Caddy website&#xA;Text Editor (vscode,vim, etc&amp;hellip;), have a text editor of your choice.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;In the realm of web development and local testing environments, creating custom local domain can streamline the devepment process. this guide walks you the steps to set up a new local domain using Caddy Server&lt;/p&gt;&#xA;&lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;CaddyServer: make sure you have caddy installed on your system, if you haven&amp;rsquo;t installed it yet, You can download and install it from the official Caddy website&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Text Editor (vscode,vim, etc&amp;hellip;), have a text editor of your choice. In this guide, we&amp;rsquo;ll use Vim, but you can subtitute it with Nano, Emacs, or any other text editor your prefer&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

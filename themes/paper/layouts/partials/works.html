@@ -1,0 +1,19 @@
+{{ $works := where site.RegularPages "Type" "eq" "work" }}
+{{ if gt (len $works) 0 }}
+<h3 class="text-lg border-b mb-8">Works</h3>
+{{ end }}
+{{ range $index, $work := $works }}
+<article class="mb-8">
+    <!-- add number -->
+    <header class="flex items-center justify-between">
+        <h5 class="!my-1 text-sm">{{ add $index 1 }}. {{ .Title }}</h5><a href="{{ .Params.url}}" class="opacity-60" target="_blank" rel="noopener noreferrer"><span>{{ .Params.url }}</span> </a>
+    </header>
+
+    {{ if eq .Params.type "repo" }}
+  <div class="github-card" data-user="{{ .Params.username }}" data-repo="{{ .Params.repo }}"></div>
+  <script src="https://cdn.jsdelivr.net/gh/lepture/github-cards@latest/jsdelivr/widget.js"></script>
+    {{ else }}
+    
+    {{ end }}
+</article>
+{{ end }}

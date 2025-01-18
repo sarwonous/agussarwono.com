@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "__FOR_DEV__": "To dev on mobile, change all `0.0.0.0` to your local IP",
-    "dev:tailwind": "npx tailwindcss -i ./assets/app.css -o ./assets/main.css",
+    "dev:tailwind": "npx tailwindcss --watch -i ./assets/app.css -o ./assets/main.css",
     "dev:server": "hugo server --buildDrafts --watch --minify --disableFastRender --themesDir=../.. --source=exampleSite --baseURL=0.0.0.0 --bind=0.0.0.0 --port=1313",
     "dev:open": "open http://0.0.0.0:1313/",
     "build:go": "cp exampleSite/go.default.mod exampleSite/go.mod",

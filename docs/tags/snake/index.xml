@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Snake on agus sarwono - programming for dummies</title><link>//0.0.0.0:1313/tags/snake/</link><description>Recent content in Snake on agus sarwono - programming for dummies</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 18 Mar 2021 09:37:36 +0000</lastBuildDate><atom:link href="//0.0.0.0:1313/tags/snake/index.xml" rel="self" type="application/rss+xml"/><item><title>Build your own snake game</title><link>//0.0.0.0:1313/article/build-your-own-snake-game/</link><pubDate>Thu, 18 Mar 2021 09:37:36 +0000</pubDate><guid>//0.0.0.0:1313/article/build-your-own-snake-game/</guid><description>&lt;p>In this tutorial we will learn how to create a snake game in lua using love2d
+snake game was one of the nostalic game you ever play,&lt;/p>
+&lt;p>by the end of this tutorial you will learn to&lt;/p>
+&lt;ul>
+&lt;li>Create a snake&lt;/li>
+&lt;li>Create a food for snake&lt;/li>
+&lt;li>Move the snake&lt;/li>
+&lt;/ul>
+&lt;h4 id="the-classical">The Classical&lt;/h4>
+&lt;p>I know all af you have played Snake on your Phone, and in this tutorial i will show you as a techie, how to build your simple own snake game&lt;/p></description></item></channel></rss>

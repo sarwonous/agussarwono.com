@@ -1228,6 +1228,11 @@ body:is(.dark *){
   margin-bottom: 0px !important;
 }
 
+.\!my-1{
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
 .mx-1{
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -1425,6 +1430,10 @@ body:is(.dark *){
   justify-content: center;
 }
 
+.justify-between{
+  justify-content: space-between;
+}
+
 .gap-2\.5{
   gap: 0.625rem;
 }
@@ -1506,6 +1515,10 @@ body:is(.dark *){
 
 .pb-1{
   padding-bottom: 0.25rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .pb-16{

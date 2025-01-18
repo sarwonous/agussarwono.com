@@ -55,8 +55,71 @@
   
   
   <meta name="description" content="type casting interface in golang can be useful when you build a modular app using golang
-says package main import ( &#34;fmt&#34; ) type Bird interface { Fly() } type Parrot struct { Bird Name string } func (p *Parrot) Fly() { fmt.Println(&#34;a Parrot name &#34; &#43; p.Name &#43; &#34; flying&#34;) } type Dove struct { Bird Name string } func (p *Dove) Fly() { fmt.Println(&#34;a Dove name &#34; &#43; p." />
-  <meta name="author" content="Agus Sarwono" />
+says
+package main
+
+import (
+	&#34;fmt&#34;
+)
+
+type Bird interface {
+	Fly()
+}
+
+type Parrot struct {
+	Bird
+	Name string
+}
+
+func (p *Parrot) Fly() {
+	fmt.Println(&#34;a Parrot name &#34; &#43; p.Name &#43; &#34; flying&#34;)
+}
+
+type Dove struct {
+	Bird
+	Name string
+}
+
+func (p *Dove) Fly() {
+	fmt.Println(&#34;a Dove name &#34; &#43; p.Name &#43; &#34; flying&#34;)
+}
+
+func NewBird(birdType string, name string) Bird {
+	var bird Bird
+	switch birdType {
+	case &#34;dove&#34;:
+		bird = &amp;Dove{
+			Name: name,
+		}
+	case &#34;parrot&#34;:
+		bird = &amp;Parrot{
+			Name: name,
+		}
+	default:
+	}
+
+	return bird
+}
+
+func main() {
+	bird1 := NewBird(&#34;dove&#34;, &#34;Doval&#34;)
+	bird2 := NewBird(&#34;parrot&#34;, &#34;Patriot&#34;)
+	// to access Name in bird1, cast dove to type Dove
+	dove, valid := bird1.(*Dove)
+	if !valid {
+		panic(&#34;invalid type&#34;)
+	}
+	fmt.Println(dove.Name)
+	dove.Fly()
+	// same as dove, you need to cast bird2
+	parrot, valid := bird2.(*Parrot)
+	if !valid {
+		panic(&#34;invalid type&#34;)
+	}
+	fmt.Println(parrot.Name)
+	parrot.Fly()
+}" />
+  <meta name="author" content="@sarwonous" />
   
 
   
@@ -108,19 +171,12 @@ says package main import ( &#34;fmt&#34; ) type Bird interface { Fly() } type Pa
   <link rel="apple-touch-icon" href="https://agussarwono.com/apple-touch-icon.png" />
 
   
-  <meta name="generator" content="Hugo 0.128.2">
+  <meta name="generator" content="Hugo 0.140.2">
 
   
   
   
   
-  
-    
-      
-    
-  
-
-
   
   
   <meta itemprop="name" content="Cast an interface/struct in golang">
@@ -308,9 +364,6 @@ says package main import ( &#34;fmt&#34; ) type Bird interface { Fly() } type Pa
       
       
       
-      <span class="mx-1">&middot;</span>
-      <span>Agus Sarwono</span>
-      
     </div>
     
   </header>
@@ -470,7 +523,7 @@ says package main import ( &#34;fmt&#34; ) type Bird interface { Fly() } type Pa
   class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
 >
   <div class="mr-auto">
-    &copy; 2024
+    &copy; 2025
     <a class="link" href="https://agussarwono.com/">agus sarwono - programming for dummies</a>
   </div>
   <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"

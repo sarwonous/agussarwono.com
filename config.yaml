@@ -7,9 +7,12 @@ theme:
 googleAnalytics: "UA-12740249-3"
 enableRobotsTXT: true
 publishDir: "docs"
-paginate: 3
+# paginate: 3
 author:
   name: "Agus Sarwono"
+
+pagination:
+  pagerSize: 3
 
 menu:
   main:
@@ -27,12 +30,15 @@ outputs:
     - html
 
 params:
+  Author: 'Agus Sarwono'
   siteLogo: "agussarwono.com"
   # color style
   color: 'gray'     
   
   articleUrl: "/article"                      # linen, wheat, gray, light
 
+  experiencesSections: 
+    - works
   # header social icons
   # twitter: '@sarwonous'               # twitter.com/YOUR_TWITTER_ID
   github: '@sarwonous'                 # github.com/YOUR_GITHUB_ID

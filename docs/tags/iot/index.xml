@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Iot on agus sarwono - programming for dummies</title><link>//0.0.0.0:1313/tags/iot/</link><description>Recent content in Iot on agus sarwono - programming for dummies</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 10 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="//0.0.0.0:1313/tags/iot/index.xml" rel="self" type="application/rss+xml"/><item><title>Build Configurable Running Text using NodeMCU + Arduino IDE + P10 Dot Matrix using DMDESP + WEBSOCKET</title><link>//0.0.0.0:1313/article/building-running-text-using-nodemcu-arduino-p10/</link><pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate><guid>//0.0.0.0:1313/article/building-running-text-using-nodemcu-arduino-p10/</guid><description>&lt;h3 id="minesweeper">Minesweeper&lt;/h3>
+&lt;p>In this tutorial i will guide you to how to build a Running Text Display using P10 Single Color Dot Matrix and a NodeMCU.&lt;/p>
+&lt;p>getting started&lt;/p>
+&lt;p>creating grid&lt;/p>
+&lt;p>placing bomb&lt;/p>
+&lt;p>placing number&lt;/p>
+&lt;p>clearing tiles&lt;/p>
+&lt;p>adding flag&lt;/p>
+&lt;p>winning&lt;/p>
+&lt;p>wrap up&lt;/p></description></item></channel></rss>
