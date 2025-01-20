@@ -4,7 +4,7 @@ categories:
 date: "2024-07-17T09:30:00+07:00"
 description: We will learn how to expose your local development using bore as ngrok open source alternative
 draft: false
-thumbnail: https://bore.digital/bore.svg
+thumbnail: https://user-images.githubusercontent.com/1796022/120690493-93029500-c4a5-11eb-8a5c-c971911467cb.png
 # resources:
 # - name: logo
 #   src: https://bore.digital/bore.svg
@@ -48,7 +48,7 @@ bore is a Reverse HTTP/TCP proxy tunnel designed to leverage secure SSH connecti
 #### Step 1: Install bore client
 
 1. **Download bore**
-	- Visit https://bore.digital or https://github.com/jkuri/bore/releases to download the appropriate version for your machine
+	- Visit https://github.com/jkuri/bore/releases to download the appropriate version for your machine
 2. **Copy bore to your application directory**
 	- Once downloaded, copy the bore executable to your application directory. For example you can copy it to `/url/local/bin` using the following command
     ```shell
