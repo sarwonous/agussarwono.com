@@ -10,8 +10,7 @@
     </header>
 
     {{ if eq .Params.type "repo" }}
-  <div class="github-card" data-user="{{ .Params.username }}" data-repo="{{ .Params.repo }}"></div>
-  <script src="https://cdn.jsdelivr.net/gh/lepture/github-cards@latest/jsdelivr/widget.js"></script>
+    <div class="gh-card gh-small" repo="{{ .Params.username }}/{{ .Params.repo }}"></div>
     {{ else }}
     
     {{ end }}
